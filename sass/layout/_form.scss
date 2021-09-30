@@ -1,0 +1,26 @@
+//search
+.search__section {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: $gps-color;
+    &  .search__ico {
+        padding: 10px;
+    }
+    & .btn__search {
+        padding: 10px;
+        >  #maRecherche{
+            border: none;
+            font-size: 17px;
+            font-weight: bold;
+            background-color: $gps-color;
+        }
+    }
+    & .description__title {
+        text-align: center;
+        
+        }
+    
+    
+}

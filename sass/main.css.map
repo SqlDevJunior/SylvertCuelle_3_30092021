@@ -1,0 +1,23 @@
+{
+    "version": 3,
+    "mappings": "AKMI,OAAO,CAAC,gFAAI;AFJZ,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAC/B,SAAS,EFIP,KAAK;;;AELX,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAC/B,SAAS,EFKL,KAAK;;;AENb,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EAChC,SAAS,EFML,MAAM;;;AITlB,AAAA,CAAC,CAAC;EACE,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,UAAU;CACzB;;AACD,AAAA,IAAI,CAAA;EAEA,MAAM,EAAE,IAAI;EACZ,SAAS,EAAE,MAAM;CACpB;;ACTD,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,oBAAoB;EACjC,WAAW,EAAE,oBAAoB;CAEpC;;AEJD,AAAA,KAAK,CAAC;EACF,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,IAAI;EACb,eAAe,EAAC,MAAM;EACtB,MAAM,EAAC,aAAc;CAGxB;;AGPD,AAAA,gBAAgB,CAAC;EACb,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,gBAAgB,EVLT,OAAkB;CUwB5B;;AAxBD,AAMI,gBANY,CAMT,YAAY,CAAC;EACZ,OAAO,EAAE,IAAI;CAChB;;AARL,AASI,gBATY,CASV,YAAY,CAAC;EACX,OAAO,EAAE,IAAI;CAOhB;;AAjBL,AAWQ,gBAXQ,CASV,YAAY,GAEP,YAAY,CAAA;EACX,MAAM,EAAE,IAAI;EACZ,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,IAAI;EACjB,gBAAgB,EVfjB,OAAkB;CUgBpB;;AAhBT,AAkBI,gBAlBY,CAkBV,mBAAmB,CAAC;EAClB,UAAU,EAAE,MAAM;CAEjB",
+    "sources": [
+        "main.scss",
+        "utils/_variables.scss",
+        "utils/_functions.scss",
+        "utils/_mixins.scss",
+        "utils/_extensions.scss",
+        "base/_base.scss",
+        "base/_typography.scss",
+        "components/_buttons.scss",
+        "layout/_header.scss",
+        "layout/_nav.scss",
+        "layout/_container.scss",
+        "layout/_form.scss",
+        "pages/_work.scss",
+        "pages/_about.scss",
+        "pages/_project.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

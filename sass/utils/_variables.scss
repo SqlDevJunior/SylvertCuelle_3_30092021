@@ -1,0 +1,13 @@
+//color
+$gps-color:rgb(223, 221, 221);
+$dark-gps-color:darken(rgb(223, 221, 221), 10%);
+$light-gps-color:lighten(rgb(223, 221, 221), 20%);
+
+//Breakpoint
+$breakpoints: (
+    phone:360px,
+    tablet: 768px,
+    desktop:1200px
+);
+
+//Description__title

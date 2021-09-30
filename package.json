@@ -1,0 +1,19 @@
+{
+  "name": "p3_cuelle_sylvert",
+  "version": "1.0.0",
+  "description": "ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss:./P3_cuelle_sylvert/sass/style.css",
+    "prefix": "postcss ./P3_cuelle_sylvert/sass/style.css --use autoprefixer -d ./P3_cuelle_sylvert/sass/prefixed/"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "dependencies": {
+    "autoprefixer": "^10.3.5",
+    "postcss": "^8.3.7",
+    "postcss-cli": "^8.3.1",
+    "prefix": "^1.0.0"
+  }
+}

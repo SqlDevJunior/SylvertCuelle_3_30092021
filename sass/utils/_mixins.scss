@@ -1,0 +1,8 @@
+//Breakpoint
+@each $breakpoint, $value in $breakpoints {
+    @media screen and (min-width: $value) {
+        max-width: $value;
+        
+    }
+    
+}
