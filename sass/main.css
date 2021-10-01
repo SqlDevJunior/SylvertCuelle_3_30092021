@@ -28,8 +28,56 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.btn__explo {
+  font-size: 17px;
+  color: white;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  padding: 0.75rem 1rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background-image: linear-gradient(to bottom, #9356dc, #ff79da);
+  margin: 32px 0 52px 0;
+  -webkit-box-shadow: 5px 5px 10px 2px #bab6b6;
+          box-shadow: 5px 5px 10px 2px #bab6b6;
+}
+
+.number {
+  color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 12.5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #9356dc;
+}
+
+.choice__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ebeaea;
+  border-radius: 30px;
+  padding: 25px 0px 25px 0px;
+  margin: 30px;
+}
+
+.choice__btn > i {
+  padding-right: 30px;
+  color: #bab6b6;
+}
+
 .logo {
-  width: 100%;
+  max-width: 100%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,7 +90,7 @@ body {
 
 .search__section {
   margin: auto;
-  width: 100%;
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,21 +101,75 @@ body {
 }
 
 .search__section .search__ico {
-  padding: 10px;
+  padding: 10px 0 10px 0;
 }
 
 .search__section .btn__search {
-  padding: 10px;
+  padding: 10px 0 10px 0px;
 }
 
 .search__section .btn__search > #maRecherche {
+  width: 150px;
+  text-align: center;
   border: none;
   font-size: 17px;
   font-weight: bold;
   background-color: #dfdddd;
 }
 
-.search__section .description__title {
+.description__title {
+  margin: auto;
+  width: 100%;
   text-align: center;
+  background-color: #ebeaea;
+}
+
+.description__title h1 {
+  font-size: 22px;
+  padding-top: 45px;
+  font-weight: bold;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.description__title h2 {
+  font-weight: lighter;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 20px;
+  font-size: 18px;
+}
+
+.exploration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ebeaea;
+}
+
+.fonctionnement {
+  margin: auto;
+  max-width: 100%;
+}
+
+.fonctionnement h1 {
+  font-size: 22px;
+  margin: 58px 0 0px 20px;
+}
+
+.fonctionnement.choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */
