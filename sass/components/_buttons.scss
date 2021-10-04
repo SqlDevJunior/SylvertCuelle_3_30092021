@@ -8,29 +8,151 @@
     margin: 32px 0 52px 0;
     box-shadow: 5px 5px 10px 2px $dark-gps-color;
 }
-.number{
-    color:white;
-    width: 25px;
-    height:25px;
-    border-radius: 12.5px;
-    align-items: center;
+
+.choice{
+    display: flex ;
+    width: 100%;
+    margin:auto;
     justify-content: center;
-    display: flex;
-    background-color: $col-primairy;
-    
-}
-.choice__btn{
+    align-items: center;
+
+    > .choice__btn{
+        width:80%;
         display: flex;
-        justify-content: center;
-        background-color: $light-gps-color;
+        align-items: center;
+        margin-top: 30px;
+        background-color:$light-gps-color;
         border-radius: 30px;
-        padding:25px 0px 25px 0px;
-        margin:30px;
+        padding:15px 0;
+        box-shadow: 5px 5px 10px 2px $dark-gps-color; 
         
-        & > i{
-            padding-right: 30px;
-            color: $dark-gps-color;
+        > .choice__number{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border-radius: 12.5px;
+            background-color: $col-primairy;
+            width: 25px;
+            height: 25px;
+            transform: translateX(-50%);
+        
         }
-
-
+    .choice__ico{
+        display: flex;
+        justify-content: left;
+        color:$dark-gps-color;
+    
+        
     }
+    .choice__text{
+        padding: 0 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: lighter;
+        
+    }
+    &:hover{
+        cursor: pointer;
+        background-color: white;
+        transition: 0.5s;
+    }
+    }
+}
+
+.menu{
+    display: flex ;
+    width: 100%;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+
+    > .menu__btn{
+        width:80%;
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        background-color:$light-gps-color;
+        border-radius: 30px;
+        padding:15px 0;
+        box-shadow: 5px 5px 10px 2px $dark-gps-color;
+        > .menu__number{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border-radius: 12.5px;
+            background-color: $col-primairy;
+            width: 25px;
+            height: 25px;
+            transform: translateX(-50%);
+        
+        }
+    .menu__ico{
+        display: flex;
+        justify-content: left;
+        color: $dark-gps-color;
+        
+    }
+    .menu__text{
+        padding: 0 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: lighter;
+        
+    }
+    &:hover{
+        cursor: pointer;
+        background-color: white;
+        transition: 0.5s;
+    }
+}
+}
+.savor{
+    display: flex ;
+    width: 100%;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+
+    > .savor__btn{
+        width:80%;
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        background-color:$light-gps-color;
+        border-radius: 30px;
+        padding:15px 0;
+        box-shadow: 5px 5px 10px 2px $dark-gps-color;
+        > .savor__number{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border-radius: 12.5px;
+            background-color: $col-primairy;
+            width: 25px;
+            height: 25px;
+            transform: translateX(-50%);
+        
+        }
+    .savor__ico{
+        display: flex;
+        justify-content: left;
+        color: $dark-gps-color;
+        
+    }
+    .savor__text{
+        padding: 0 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: lighter;
+        
+    }
+    &:hover{
+        cursor: pointer;
+        background-color: white;
+        transition: 0.5s;
+    }
+}
+}
+
+
+    

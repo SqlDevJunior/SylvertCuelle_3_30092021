@@ -46,15 +46,34 @@
     
 }
 .fonctionnement{
+    
     margin: auto;
     max-width: 100%;
     & h1{
         font-size: 22px;
         margin:58px 0 0px 20px;
     }
-    &.choice{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+
+
+    @include bp(tablet) {
+        display:flex;
+        flex-direction:row;
+        & h1{
+            margin: 44px 0 0 20px;
+        }
     }
+    @include bp(desktop) {
+        display:flex;
+        flex-direction:row;
+        & h1{
+            margin: 44px 0 0 20px;
+        }
+
+
+    }
+
 }
+
+
+  
+  

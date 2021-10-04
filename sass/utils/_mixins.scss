@@ -1,8 +1,10 @@
 //Breakpoint
-@each $breakpoint, $value in $breakpoints {
-    @media screen and (min-width: $value) {
-        max-width: $value;
-        
+@mixin bp($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        $value: map-get($breakpoints, $breakpoint);
+         
+        @media screen and (min-width: $value) {
+            @content;
+        }
     }
-    
 }
