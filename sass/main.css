@@ -1,14 +1,8 @@
-@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-body {
-  margin: auto;
-  max-width: 1600px;
 }
 
 body {
@@ -52,6 +46,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 30px;
+  margin-bottom: 30px;
   background-color: #ebeaea;
   border-radius: 30px;
   padding: 15px 0;
@@ -124,6 +119,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 30px;
+  margin-bottom: 30px;
   background-color: #ebeaea;
   border-radius: 30px;
   padding: 15px 0;
@@ -196,6 +192,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 30px;
+  margin-bottom: 30px;
   background-color: #ebeaea;
   border-radius: 30px;
   padding: 15px 0;
@@ -229,7 +226,7 @@ body {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  color: #bab6b6;
+  color: #9356dc;
 }
 
 .savor > .savor__btn .savor__text {
@@ -243,6 +240,28 @@ body {
   background-color: white;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.btn__nouveau {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #99e2d0;
+  padding: 10px;
+  color: #278870;
+  border-radius: 5px;
+  -webkit-transform: translateX(280%);
+          transform: translateX(280%);
+  margin: 15px 10px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .logo {
@@ -319,18 +338,18 @@ body {
   background-color: #ebeaea;
 }
 
-.fonctionnement {
+.fonctionnement, .restaurants {
   margin: auto;
   max-width: 100%;
 }
 
-.fonctionnement h1 {
+.fonctionnement h1, .restaurants h1 {
   font-size: 22px;
   margin: 58px 0 0px 20px;
 }
 
 @media screen and (min-width: 768px) {
-  .fonctionnement {
+  .fonctionnement, .restaurants {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -339,13 +358,13 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .fonctionnement h1 {
+  .fonctionnement h1, .restaurants h1 {
     margin: 44px 0 0 20px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .fonctionnement {
+  .fonctionnement, .restaurants {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -354,8 +373,146 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .fonctionnement h1 {
+  .fonctionnement h1, .restaurants h1 {
     margin: 44px 0 0 20px;
   }
+}
+
+.restaurants {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #dfdddd;
+  margin: auto;
+  width: 100%;
+}
+
+.restaurants .title > h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.restaurants > .resto__card1, .restaurants .resto__card2, .restaurants .resto__card3, .restaurants .resto__card4 {
+  background-color: white;
+  margin: 40px 20px 20px 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+
+.restaurants > .resto__card1 > .resto1__img > img, .restaurants > .resto__card1 .resto2__img > img, .restaurants > .resto__card1 .resto3__img > img, .restaurants > .resto__card1 .resto4__img > img, .restaurants .resto__card2 > .resto1__img > img, .restaurants .resto__card2 .resto2__img > img, .restaurants .resto__card2 .resto3__img > img, .restaurants .resto__card2 .resto4__img > img, .restaurants .resto__card3 > .resto1__img > img, .restaurants .resto__card3 .resto2__img > img, .restaurants .resto__card3 .resto3__img > img, .restaurants .resto__card3 .resto4__img > img, .restaurants .resto__card4 > .resto1__img > img, .restaurants .resto__card4 .resto2__img > img, .restaurants .resto__card4 .resto3__img > img, .restaurants .resto__card4 .resto4__img > img {
+  border-radius: 20px 20px 0px 0px;
+}
+
+.restaurants > .resto__card1 > .resto1__desc > .text1, .restaurants > .resto__card1 .resto2__desc > .text1, .restaurants > .resto__card1 .resto3__desc > .text1, .restaurants > .resto__card1 .resto4__desc > .text1, .restaurants .resto__card2 > .resto1__desc > .text1, .restaurants .resto__card2 .resto2__desc > .text1, .restaurants .resto__card2 .resto3__desc > .text1, .restaurants .resto__card2 .resto4__desc > .text1, .restaurants .resto__card3 > .resto1__desc > .text1, .restaurants .resto__card3 .resto2__desc > .text1, .restaurants .resto__card3 .resto3__desc > .text1, .restaurants .resto__card3 .resto4__desc > .text1, .restaurants .resto__card4 > .resto1__desc > .text1, .restaurants .resto__card4 .resto2__desc > .text1, .restaurants .resto__card4 .resto3__desc > .text1, .restaurants .resto__card4 .resto4__desc > .text1 {
+  padding: 10px 20px;
+  font-size: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.restaurants > .resto__card1 > .resto1__desc > .text1 > .heart__card1 > img, .restaurants > .resto__card1 .resto2__desc > .text1 > .heart__card1 > img, .restaurants > .resto__card1 .resto3__desc > .text1 > .heart__card1 > img, .restaurants > .resto__card1 .resto4__desc > .text1 > .heart__card1 > img, .restaurants .resto__card2 > .resto1__desc > .text1 > .heart__card1 > img, .restaurants .resto__card2 .resto2__desc > .text1 > .heart__card1 > img, .restaurants .resto__card2 .resto3__desc > .text1 > .heart__card1 > img, .restaurants .resto__card2 .resto4__desc > .text1 > .heart__card1 > img, .restaurants .resto__card3 > .resto1__desc > .text1 > .heart__card1 > img, .restaurants .resto__card3 .resto2__desc > .text1 > .heart__card1 > img, .restaurants .resto__card3 .resto3__desc > .text1 > .heart__card1 > img, .restaurants .resto__card3 .resto4__desc > .text1 > .heart__card1 > img, .restaurants .resto__card4 > .resto1__desc > .text1 > .heart__card1 > img, .restaurants .resto__card4 .resto2__desc > .text1 > .heart__card1 > img, .restaurants .resto__card4 .resto3__desc > .text1 > .heart__card1 > img, .restaurants .resto__card4 .resto4__desc > .text1 > .heart__card1 > img {
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-transform: translateX(280%);
+          transform: translateX(280%);
+}
+
+.restaurants > .resto__card1 > .resto1__desc > .text1 > .heart__card1 > img:hover, .restaurants > .resto__card1 .resto2__desc > .text1 > .heart__card1 > img:hover, .restaurants > .resto__card1 .resto3__desc > .text1 > .heart__card1 > img:hover, .restaurants > .resto__card1 .resto4__desc > .text1 > .heart__card1 > img:hover, .restaurants .resto__card2 > .resto1__desc > .text1 > .heart__card1 > img:hover, .restaurants .resto__card2 .resto2__desc > .text1 > .heart__card1 > img:hover, .restaurants .resto__card2 .resto3__desc > .text1 > .heart__card1 > img:hover, .restaurants .resto__card2 .resto4__desc > .text1 > .heart__card1 > img:hover, .restaurants .resto__card3 > .resto1__desc > .text1 > .heart__card1 > img:hover, .restaurants .resto__card3 .resto2__desc > .text1 > .heart__card1 > img:hover, .restaurants .resto__card3 .resto3__desc > .text1 > .heart__card1 > img:hover, .restaurants .resto__card3 .resto4__desc > .text1 > .heart__card1 > img:hover, .restaurants .resto__card4 > .resto1__desc > .text1 > .heart__card1 > img:hover, .restaurants .resto__card4 .resto2__desc > .text1 > .heart__card1 > img:hover, .restaurants .resto__card4 .resto3__desc > .text1 > .heart__card1 > img:hover, .restaurants .resto__card4 .resto4__desc > .text1 > .heart__card1 > img:hover {
+  cursor: pointer;
+  z-index: 1;
+  background: url(/ressources/images/heart/imageedit_4_5327351324.png);
+  -webkit-transition-duration: 5s;
+          transition-duration: 5s;
+}
+
+.restaurants > .resto__card1 > .resto1__desc > .text2, .restaurants > .resto__card1 .resto2__desc > .text2, .restaurants > .resto__card1 .resto3__desc > .text2, .restaurants > .resto__card1 .resto4__desc > .text2, .restaurants .resto__card2 > .resto1__desc > .text2, .restaurants .resto__card2 .resto2__desc > .text2, .restaurants .resto__card2 .resto3__desc > .text2, .restaurants .resto__card2 .resto4__desc > .text2, .restaurants .resto__card3 > .resto1__desc > .text2, .restaurants .resto__card3 .resto2__desc > .text2, .restaurants .resto__card3 .resto3__desc > .text2, .restaurants .resto__card3 .resto4__desc > .text2, .restaurants .resto__card4 > .resto1__desc > .text2, .restaurants .resto__card4 .resto2__desc > .text2, .restaurants .resto__card4 .resto3__desc > .text2, .restaurants .resto__card4 .resto4__desc > .text2 {
+  padding: 0px 20px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.restaurants > .heart__card1 > img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurants {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.restaurants > h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer {
+  background-color: #333232;
+  color: white;
+}
+
+footer .logo__footer {
+  font-family: 'Shrikhand', cursive;
+  font-size: 20px;
+  padding: 25px  25px 0px 25px;
+}
+
+footer .proposition__restaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .partenaire {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=main.css.map */

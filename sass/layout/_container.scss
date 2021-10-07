@@ -45,7 +45,7 @@
     background-color: $light-gps-color;
     
 }
-.fonctionnement{
+.fonctionnement, .restaurants{
     
     margin: auto;
     max-width: 100%;
@@ -61,6 +61,7 @@
         & h1{
             margin: 44px 0 0 20px;
         }
+        
     }
     @include bp(desktop) {
         display:flex;
@@ -73,7 +74,31 @@
     }
 
 }
+.restaurants{
+   @include card__resto;
+   > .heart__card1 > img{
+       display: flex;
+       flex-direction: row;
+       justify-content: right;
+   }
+   @include bp(tablet) {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
+    }
+    > h1{
+        display: flex;
 
-  
-  
+    }
+
+   @include bp(desktop) {
+    
+    
+   
+}
+
+}
+

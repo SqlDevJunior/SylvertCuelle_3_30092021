@@ -5,7 +5,9 @@ $light-gps-color:lighten(rgb(223, 221, 221), 5%);
 $col-primairy:#9356dc;
 $col-secondary:#ff79da;
 $col-tertiory:#99e2d0;
+$dark-col-tertiory:darken((#99e2d0), 40%);
 $back-img-degrad:linear-gradient(to bottom, $col-primairy,$col-secondary);
+$col-footer:rgb(51, 50, 50);
 
 //Breakpoint
 $breakpoints: (
@@ -14,4 +16,4 @@ $breakpoints: (
     desktop:1200px
 );
 
-//Description__title
+
