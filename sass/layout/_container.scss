@@ -1,10 +1,11 @@
 //search
 .search__section {
+    border-top: 2px solid grey;
     margin: auto;
     max-width: 100%;
     display: flex;
     justify-content: center;
-    background-color: $gps-color;
+    background-color: $dark-gps-color;
     &  .search__ico {
         padding: 10px 0 10px 0;
     }
@@ -16,7 +17,7 @@
             border: none;
             font-size: 17px;
             font-weight: bold;
-            background-color:$gps-color ;
+            background-color:$dark-gps-color ;
         }
     }
 }
@@ -75,30 +76,52 @@
 
 }
 .restaurants{
+    
    @include card__resto;
    > .heart__card1 > img{
        display: flex;
        flex-direction: row;
        justify-content: right;
    }
-   @include bp(tablet) {
-    display: inline-flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    }
-    > h1{
-        display: flex;
-
-    }
-
-   @include bp(desktop) {
-    
-    
+   @include bp(tablet){
+    background-color:$gps-color; 
+   }
    
-}
+   @include bp(desktop){
+    background-color:$gps-color; 
+   }
+   
+  
+   
+    > .card{ 
 
+        @include bp(tablet);
+        display: inline-flex;
+        flex-wrap: wrap;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    
+        }
+   
+    > .card{ 
+       
+        @include bp(desktop) { 
+        display: inline-flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        }
+    }
 }
+    
+
+   
+
+
 

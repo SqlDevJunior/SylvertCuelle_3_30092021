@@ -22,7 +22,7 @@
             align-items: center;
             margin-top: 30px;
             margin-bottom: 30px;
-            background-color:$light-gps-color;
+            background-color:$dark-gps-color;
             border-radius: 30px;
             padding:15px 0;
             box-shadow: 5px 5px 10px 2px $dark-gps-color; 
@@ -72,7 +72,7 @@
         align-items: center;
         margin-top: 30px;
         margin-bottom:30px;
-        background-color:$light-gps-color;
+        background-color:$dark-gps-color;
         border-radius: 30px;
         padding:15px 0;
         box-shadow: 5px 5px 10px 2px $dark-gps-color;
@@ -120,7 +120,7 @@
         align-items: center;
         margin-top: 30px;
         margin-bottom: 30px;
-        background-color:$light-gps-color;
+        background-color:$dark-gps-color;
         border-radius: 30px;
         padding:15px 0;
         box-shadow: 5px 5px 10px 2px $dark-gps-color;
@@ -160,34 +160,38 @@
 }
 
 @mixin card__resto{
-    .title > h1{
+    .title { 
         display: flex;
         justify-content: left;
+        background-color: $gps-color;
+        padding-bottom: 28px;
+        
     }
+    .card{
         position: relative;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         background-color: $gps-color;
         margin:auto;
         width: 100%;
         > .resto__card1, .resto__card2, .resto__card3, .resto__card4 {
             background-color: white;
-            margin: 40px 20px 20px 20px;
-        
+            margin: 10px 20px 20px 20px;
             object-fit: cover;
             border-radius: 20px;
             > .resto1__img > img, .resto2__img > img, .resto3__img > img, .resto4__img > img{
             border-radius: 20px 20px 0px 0px;
             }
             > .resto1__desc > .text1, .resto2__desc > .text1, .resto3__desc > .text1, .resto4__desc > .text1 {
-                padding: 10px 20px;
+                padding: 5px 0px 5px 20px;
                 font-size: 13px;
                 display: flex;
-                & > .heart__card1 > img{
+                & > .heart__card1 > img, .heart__card2 > img, .heart__card3 > img, .heart__card4 > img{
                     z-index: 0;
                     display: flex;
+                    align-items: center;
                     flex-direction: row;
                     transform: translateX(280%);
                     &:hover{
@@ -200,15 +204,18 @@
                 }
             }
             > .resto1__desc > .text2, .resto2__desc > .text2, .resto3__desc > .text2, .resto4__desc > .text2{
-                padding: 0px 20px;
+                padding: 0px 0px 10px 20px;
                 font-size: 18px;
                 font-weight: lighter;
             }
+    
+        }
             
         }
+    }
         
     
-}
+
 @mixin btn__card{
     
         display: flex;

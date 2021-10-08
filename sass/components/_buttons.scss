@@ -4,7 +4,7 @@
     border-radius: 1.5rem;
     cursor:pointer;
     padding: 0.75rem 1rem;
-    background-image: $back-img-degrad;
+    background-image: $black-img-degrad;
     margin: 32px 0 52px 0;
     box-shadow: 5px 5px 10px 2px $dark-gps-color;
 }
@@ -23,6 +23,6 @@
 .btn__nouveau{
    @include btn__card;
 }
-//btn__heart
+
 
     

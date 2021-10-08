@@ -19,8 +19,8 @@ body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
   background-image: linear-gradient(to bottom, #9356dc, #ff79da);
   margin: 32px 0 52px 0;
-  -webkit-box-shadow: 5px 5px 10px 2px #bab6b6;
-          box-shadow: 5px 5px 10px 2px #bab6b6;
+  -webkit-box-shadow: 5px 5px 10px 2px #ededed;
+          box-shadow: 5px 5px 10px 2px #ededed;
 }
 
 .choice {
@@ -47,11 +47,11 @@ body {
           align-items: center;
   margin-top: 30px;
   margin-bottom: 30px;
-  background-color: #ebeaea;
+  background-color: #ededed;
   border-radius: 30px;
   padding: 15px 0;
-  -webkit-box-shadow: 5px 5px 10px 2px #bab6b6;
-          box-shadow: 5px 5px 10px 2px #bab6b6;
+  -webkit-box-shadow: 5px 5px 10px 2px #ededed;
+          box-shadow: 5px 5px 10px 2px #ededed;
 }
 
 .choice > .choice__btn > .choice__number {
@@ -80,7 +80,7 @@ body {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  color: #bab6b6;
+  color: #ededed;
 }
 
 .choice > .choice__btn .choice__text {
@@ -120,11 +120,11 @@ body {
           align-items: center;
   margin-top: 30px;
   margin-bottom: 30px;
-  background-color: #ebeaea;
+  background-color: #ededed;
   border-radius: 30px;
   padding: 15px 0;
-  -webkit-box-shadow: 5px 5px 10px 2px #bab6b6;
-          box-shadow: 5px 5px 10px 2px #bab6b6;
+  -webkit-box-shadow: 5px 5px 10px 2px #ededed;
+          box-shadow: 5px 5px 10px 2px #ededed;
 }
 
 .menu > .menu__btn > .menu__number {
@@ -153,7 +153,7 @@ body {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  color: #bab6b6;
+  color: #ededed;
 }
 
 .menu > .menu__btn .menu__text {
@@ -193,11 +193,11 @@ body {
           align-items: center;
   margin-top: 30px;
   margin-bottom: 30px;
-  background-color: #ebeaea;
+  background-color: #ededed;
   border-radius: 30px;
   padding: 15px 0;
-  -webkit-box-shadow: 5px 5px 10px 2px #bab6b6;
-          box-shadow: 5px 5px 10px 2px #bab6b6;
+  -webkit-box-shadow: 5px 5px 10px 2px #ededed;
+          box-shadow: 5px 5px 10px 2px #ededed;
 }
 
 .savor > .savor__btn > .savor__number {
@@ -277,6 +277,7 @@ body {
 }
 
 .search__section {
+  border-top: 2px solid #ededed;
   margin: auto;
   max-width: 100%;
   display: -webkit-box;
@@ -285,7 +286,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #dfdddd;
+  background-color: #ededed;
 }
 
 .search__section .search__ico {
@@ -302,14 +303,14 @@ body {
   border: none;
   font-size: 17px;
   font-weight: bold;
-  background-color: #dfdddd;
+  background-color: #ededed;
 }
 
 .description__title {
   margin: auto;
   width: 100%;
   text-align: center;
-  background-color: #ebeaea;
+  background-color: #fafafa;
 }
 
 .description__title h1 {
@@ -335,7 +336,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #ebeaea;
+  background-color: #fafafa;
 }
 
 .fonctionnement, .restaurants {
@@ -378,60 +379,65 @@ body {
   }
 }
 
-.restaurants {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #dfdddd;
-  margin: auto;
-  width: 100%;
-}
-
-.restaurants .title > h1 {
+.restaurants .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
+  background-color: #fafafaef;
+  padding-bottom: 28px;
 }
 
-.restaurants > .resto__card1, .restaurants .resto__card2, .restaurants .resto__card3, .restaurants .resto__card4 {
+.restaurants .card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fafafaef;
+  margin: auto;
+  width: 100%;
+}
+
+.restaurants .card > .resto__card1, .restaurants .card .resto__card2, .restaurants .card .resto__card3, .restaurants .card .resto__card4 {
   background-color: white;
-  margin: 40px 20px 20px 20px;
+  margin: 10px 20px 20px 20px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px;
 }
 
-.restaurants > .resto__card1 > .resto1__img > img, .restaurants > .resto__card1 .resto2__img > img, .restaurants > .resto__card1 .resto3__img > img, .restaurants > .resto__card1 .resto4__img > img, .restaurants .resto__card2 > .resto1__img > img, .restaurants .resto__card2 .resto2__img > img, .restaurants .resto__card2 .resto3__img > img, .restaurants .resto__card2 .resto4__img > img, .restaurants .resto__card3 > .resto1__img > img, .restaurants .resto__card3 .resto2__img > img, .restaurants .resto__card3 .resto3__img > img, .restaurants .resto__card3 .resto4__img > img, .restaurants .resto__card4 > .resto1__img > img, .restaurants .resto__card4 .resto2__img > img, .restaurants .resto__card4 .resto3__img > img, .restaurants .resto__card4 .resto4__img > img {
+.restaurants .card > .resto__card1 > .resto1__img > img, .restaurants .card > .resto__card1 .resto2__img > img, .restaurants .card > .resto__card1 .resto3__img > img, .restaurants .card > .resto__card1 .resto4__img > img, .restaurants .card .resto__card2 > .resto1__img > img, .restaurants .card .resto__card2 .resto2__img > img, .restaurants .card .resto__card2 .resto3__img > img, .restaurants .card .resto__card2 .resto4__img > img, .restaurants .card .resto__card3 > .resto1__img > img, .restaurants .card .resto__card3 .resto2__img > img, .restaurants .card .resto__card3 .resto3__img > img, .restaurants .card .resto__card3 .resto4__img > img, .restaurants .card .resto__card4 > .resto1__img > img, .restaurants .card .resto__card4 .resto2__img > img, .restaurants .card .resto__card4 .resto3__img > img, .restaurants .card .resto__card4 .resto4__img > img {
   border-radius: 20px 20px 0px 0px;
 }
 
-.restaurants > .resto__card1 > .resto1__desc > .text1, .restaurants > .resto__card1 .resto2__desc > .text1, .restaurants > .resto__card1 .resto3__desc > .text1, .restaurants > .resto__card1 .resto4__desc > .text1, .restaurants .resto__card2 > .resto1__desc > .text1, .restaurants .resto__card2 .resto2__desc > .text1, .restaurants .resto__card2 .resto3__desc > .text1, .restaurants .resto__card2 .resto4__desc > .text1, .restaurants .resto__card3 > .resto1__desc > .text1, .restaurants .resto__card3 .resto2__desc > .text1, .restaurants .resto__card3 .resto3__desc > .text1, .restaurants .resto__card3 .resto4__desc > .text1, .restaurants .resto__card4 > .resto1__desc > .text1, .restaurants .resto__card4 .resto2__desc > .text1, .restaurants .resto__card4 .resto3__desc > .text1, .restaurants .resto__card4 .resto4__desc > .text1 {
-  padding: 10px 20px;
+.restaurants .card > .resto__card1 > .resto1__desc > .text1, .restaurants .card > .resto__card1 .resto2__desc > .text1, .restaurants .card > .resto__card1 .resto3__desc > .text1, .restaurants .card > .resto__card1 .resto4__desc > .text1, .restaurants .card .resto__card2 > .resto1__desc > .text1, .restaurants .card .resto__card2 .resto2__desc > .text1, .restaurants .card .resto__card2 .resto3__desc > .text1, .restaurants .card .resto__card2 .resto4__desc > .text1, .restaurants .card .resto__card3 > .resto1__desc > .text1, .restaurants .card .resto__card3 .resto2__desc > .text1, .restaurants .card .resto__card3 .resto3__desc > .text1, .restaurants .card .resto__card3 .resto4__desc > .text1, .restaurants .card .resto__card4 > .resto1__desc > .text1, .restaurants .card .resto__card4 .resto2__desc > .text1, .restaurants .card .resto__card4 .resto3__desc > .text1, .restaurants .card .resto__card4 .resto4__desc > .text1 {
+  padding: 5px 0px 5px 20px;
   font-size: 13px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.restaurants > .resto__card1 > .resto1__desc > .text1 > .heart__card1 > img, .restaurants > .resto__card1 .resto2__desc > .text1 > .heart__card1 > img, .restaurants > .resto__card1 .resto3__desc > .text1 > .heart__card1 > img, .restaurants > .resto__card1 .resto4__desc > .text1 > .heart__card1 > img, .restaurants .resto__card2 > .resto1__desc > .text1 > .heart__card1 > img, .restaurants .resto__card2 .resto2__desc > .text1 > .heart__card1 > img, .restaurants .resto__card2 .resto3__desc > .text1 > .heart__card1 > img, .restaurants .resto__card2 .resto4__desc > .text1 > .heart__card1 > img, .restaurants .resto__card3 > .resto1__desc > .text1 > .heart__card1 > img, .restaurants .resto__card3 .resto2__desc > .text1 > .heart__card1 > img, .restaurants .resto__card3 .resto3__desc > .text1 > .heart__card1 > img, .restaurants .resto__card3 .resto4__desc > .text1 > .heart__card1 > img, .restaurants .resto__card4 > .resto1__desc > .text1 > .heart__card1 > img, .restaurants .resto__card4 .resto2__desc > .text1 > .heart__card1 > img, .restaurants .resto__card4 .resto3__desc > .text1 > .heart__card1 > img, .restaurants .resto__card4 .resto4__desc > .text1 > .heart__card1 > img {
+.restaurants .card > .resto__card1 > .resto1__desc > .text1 > .heart__card1 > img, .restaurants .card > .resto__card1 > .resto1__desc > .text1 .heart__card2 > img, .restaurants .card > .resto__card1 > .resto1__desc > .text1 .heart__card3 > img, .restaurants .card > .resto__card1 > .resto1__desc > .text1 .heart__card4 > img, .restaurants .card > .resto__card1 .resto2__desc > .text1 > .heart__card1 > img, .restaurants .card > .resto__card1 .resto2__desc > .text1 .heart__card2 > img, .restaurants .card > .resto__card1 .resto2__desc > .text1 .heart__card3 > img, .restaurants .card > .resto__card1 .resto2__desc > .text1 .heart__card4 > img, .restaurants .card > .resto__card1 .resto3__desc > .text1 > .heart__card1 > img, .restaurants .card > .resto__card1 .resto3__desc > .text1 .heart__card2 > img, .restaurants .card > .resto__card1 .resto3__desc > .text1 .heart__card3 > img, .restaurants .card > .resto__card1 .resto3__desc > .text1 .heart__card4 > img, .restaurants .card > .resto__card1 .resto4__desc > .text1 > .heart__card1 > img, .restaurants .card > .resto__card1 .resto4__desc > .text1 .heart__card2 > img, .restaurants .card > .resto__card1 .resto4__desc > .text1 .heart__card3 > img, .restaurants .card > .resto__card1 .resto4__desc > .text1 .heart__card4 > img, .restaurants .card .resto__card2 > .resto1__desc > .text1 > .heart__card1 > img, .restaurants .card .resto__card2 > .resto1__desc > .text1 .heart__card2 > img, .restaurants .card .resto__card2 > .resto1__desc > .text1 .heart__card3 > img, .restaurants .card .resto__card2 > .resto1__desc > .text1 .heart__card4 > img, .restaurants .card .resto__card2 .resto2__desc > .text1 > .heart__card1 > img, .restaurants .card .resto__card2 .resto2__desc > .text1 .heart__card2 > img, .restaurants .card .resto__card2 .resto2__desc > .text1 .heart__card3 > img, .restaurants .card .resto__card2 .resto2__desc > .text1 .heart__card4 > img, .restaurants .card .resto__card2 .resto3__desc > .text1 > .heart__card1 > img, .restaurants .card .resto__card2 .resto3__desc > .text1 .heart__card2 > img, .restaurants .card .resto__card2 .resto3__desc > .text1 .heart__card3 > img, .restaurants .card .resto__card2 .resto3__desc > .text1 .heart__card4 > img, .restaurants .card .resto__card2 .resto4__desc > .text1 > .heart__card1 > img, .restaurants .card .resto__card2 .resto4__desc > .text1 .heart__card2 > img, .restaurants .card .resto__card2 .resto4__desc > .text1 .heart__card3 > img, .restaurants .card .resto__card2 .resto4__desc > .text1 .heart__card4 > img, .restaurants .card .resto__card3 > .resto1__desc > .text1 > .heart__card1 > img, .restaurants .card .resto__card3 > .resto1__desc > .text1 .heart__card2 > img, .restaurants .card .resto__card3 > .resto1__desc > .text1 .heart__card3 > img, .restaurants .card .resto__card3 > .resto1__desc > .text1 .heart__card4 > img, .restaurants .card .resto__card3 .resto2__desc > .text1 > .heart__card1 > img, .restaurants .card .resto__card3 .resto2__desc > .text1 .heart__card2 > img, .restaurants .card .resto__card3 .resto2__desc > .text1 .heart__card3 > img, .restaurants .card .resto__card3 .resto2__desc > .text1 .heart__card4 > img, .restaurants .card .resto__card3 .resto3__desc > .text1 > .heart__card1 > img, .restaurants .card .resto__card3 .resto3__desc > .text1 .heart__card2 > img, .restaurants .card .resto__card3 .resto3__desc > .text1 .heart__card3 > img, .restaurants .card .resto__card3 .resto3__desc > .text1 .heart__card4 > img, .restaurants .card .resto__card3 .resto4__desc > .text1 > .heart__card1 > img, .restaurants .card .resto__card3 .resto4__desc > .text1 .heart__card2 > img, .restaurants .card .resto__card3 .resto4__desc > .text1 .heart__card3 > img, .restaurants .card .resto__card3 .resto4__desc > .text1 .heart__card4 > img, .restaurants .card .resto__card4 > .resto1__desc > .text1 > .heart__card1 > img, .restaurants .card .resto__card4 > .resto1__desc > .text1 .heart__card2 > img, .restaurants .card .resto__card4 > .resto1__desc > .text1 .heart__card3 > img, .restaurants .card .resto__card4 > .resto1__desc > .text1 .heart__card4 > img, .restaurants .card .resto__card4 .resto2__desc > .text1 > .heart__card1 > img, .restaurants .card .resto__card4 .resto2__desc > .text1 .heart__card2 > img, .restaurants .card .resto__card4 .resto2__desc > .text1 .heart__card3 > img, .restaurants .card .resto__card4 .resto2__desc > .text1 .heart__card4 > img, .restaurants .card .resto__card4 .resto3__desc > .text1 > .heart__card1 > img, .restaurants .card .resto__card4 .resto3__desc > .text1 .heart__card2 > img, .restaurants .card .resto__card4 .resto3__desc > .text1 .heart__card3 > img, .restaurants .card .resto__card4 .resto3__desc > .text1 .heart__card4 > img, .restaurants .card .resto__card4 .resto4__desc > .text1 > .heart__card1 > img, .restaurants .card .resto__card4 .resto4__desc > .text1 .heart__card2 > img, .restaurants .card .resto__card4 .resto4__desc > .text1 .heart__card3 > img, .restaurants .card .resto__card4 .resto4__desc > .text1 .heart__card4 > img {
   z-index: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -440,7 +446,7 @@ body {
           transform: translateX(280%);
 }
 
-.restaurants > .resto__card1 > .resto1__desc > .text1 > .heart__card1 > img:hover, .restaurants > .resto__card1 .resto2__desc > .text1 > .heart__card1 > img:hover, .restaurants > .resto__card1 .resto3__desc > .text1 > .heart__card1 > img:hover, .restaurants > .resto__card1 .resto4__desc > .text1 > .heart__card1 > img:hover, .restaurants .resto__card2 > .resto1__desc > .text1 > .heart__card1 > img:hover, .restaurants .resto__card2 .resto2__desc > .text1 > .heart__card1 > img:hover, .restaurants .resto__card2 .resto3__desc > .text1 > .heart__card1 > img:hover, .restaurants .resto__card2 .resto4__desc > .text1 > .heart__card1 > img:hover, .restaurants .resto__card3 > .resto1__desc > .text1 > .heart__card1 > img:hover, .restaurants .resto__card3 .resto2__desc > .text1 > .heart__card1 > img:hover, .restaurants .resto__card3 .resto3__desc > .text1 > .heart__card1 > img:hover, .restaurants .resto__card3 .resto4__desc > .text1 > .heart__card1 > img:hover, .restaurants .resto__card4 > .resto1__desc > .text1 > .heart__card1 > img:hover, .restaurants .resto__card4 .resto2__desc > .text1 > .heart__card1 > img:hover, .restaurants .resto__card4 .resto3__desc > .text1 > .heart__card1 > img:hover, .restaurants .resto__card4 .resto4__desc > .text1 > .heart__card1 > img:hover {
+.restaurants .card > .resto__card1 > .resto1__desc > .text1 > .heart__card1 > img:hover, .restaurants .card > .resto__card1 > .resto1__desc > .text1 .heart__card2 > img:hover, .restaurants .card > .resto__card1 > .resto1__desc > .text1 .heart__card3 > img:hover, .restaurants .card > .resto__card1 > .resto1__desc > .text1 .heart__card4 > img:hover, .restaurants .card > .resto__card1 .resto2__desc > .text1 > .heart__card1 > img:hover, .restaurants .card > .resto__card1 .resto2__desc > .text1 .heart__card2 > img:hover, .restaurants .card > .resto__card1 .resto2__desc > .text1 .heart__card3 > img:hover, .restaurants .card > .resto__card1 .resto2__desc > .text1 .heart__card4 > img:hover, .restaurants .card > .resto__card1 .resto3__desc > .text1 > .heart__card1 > img:hover, .restaurants .card > .resto__card1 .resto3__desc > .text1 .heart__card2 > img:hover, .restaurants .card > .resto__card1 .resto3__desc > .text1 .heart__card3 > img:hover, .restaurants .card > .resto__card1 .resto3__desc > .text1 .heart__card4 > img:hover, .restaurants .card > .resto__card1 .resto4__desc > .text1 > .heart__card1 > img:hover, .restaurants .card > .resto__card1 .resto4__desc > .text1 .heart__card2 > img:hover, .restaurants .card > .resto__card1 .resto4__desc > .text1 .heart__card3 > img:hover, .restaurants .card > .resto__card1 .resto4__desc > .text1 .heart__card4 > img:hover, .restaurants .card .resto__card2 > .resto1__desc > .text1 > .heart__card1 > img:hover, .restaurants .card .resto__card2 > .resto1__desc > .text1 .heart__card2 > img:hover, .restaurants .card .resto__card2 > .resto1__desc > .text1 .heart__card3 > img:hover, .restaurants .card .resto__card2 > .resto1__desc > .text1 .heart__card4 > img:hover, .restaurants .card .resto__card2 .resto2__desc > .text1 > .heart__card1 > img:hover, .restaurants .card .resto__card2 .resto2__desc > .text1 .heart__card2 > img:hover, .restaurants .card .resto__card2 .resto2__desc > .text1 .heart__card3 > img:hover, .restaurants .card .resto__card2 .resto2__desc > .text1 .heart__card4 > img:hover, .restaurants .card .resto__card2 .resto3__desc > .text1 > .heart__card1 > img:hover, .restaurants .card .resto__card2 .resto3__desc > .text1 .heart__card2 > img:hover, .restaurants .card .resto__card2 .resto3__desc > .text1 .heart__card3 > img:hover, .restaurants .card .resto__card2 .resto3__desc > .text1 .heart__card4 > img:hover, .restaurants .card .resto__card2 .resto4__desc > .text1 > .heart__card1 > img:hover, .restaurants .card .resto__card2 .resto4__desc > .text1 .heart__card2 > img:hover, .restaurants .card .resto__card2 .resto4__desc > .text1 .heart__card3 > img:hover, .restaurants .card .resto__card2 .resto4__desc > .text1 .heart__card4 > img:hover, .restaurants .card .resto__card3 > .resto1__desc > .text1 > .heart__card1 > img:hover, .restaurants .card .resto__card3 > .resto1__desc > .text1 .heart__card2 > img:hover, .restaurants .card .resto__card3 > .resto1__desc > .text1 .heart__card3 > img:hover, .restaurants .card .resto__card3 > .resto1__desc > .text1 .heart__card4 > img:hover, .restaurants .card .resto__card3 .resto2__desc > .text1 > .heart__card1 > img:hover, .restaurants .card .resto__card3 .resto2__desc > .text1 .heart__card2 > img:hover, .restaurants .card .resto__card3 .resto2__desc > .text1 .heart__card3 > img:hover, .restaurants .card .resto__card3 .resto2__desc > .text1 .heart__card4 > img:hover, .restaurants .card .resto__card3 .resto3__desc > .text1 > .heart__card1 > img:hover, .restaurants .card .resto__card3 .resto3__desc > .text1 .heart__card2 > img:hover, .restaurants .card .resto__card3 .resto3__desc > .text1 .heart__card3 > img:hover, .restaurants .card .resto__card3 .resto3__desc > .text1 .heart__card4 > img:hover, .restaurants .card .resto__card3 .resto4__desc > .text1 > .heart__card1 > img:hover, .restaurants .card .resto__card3 .resto4__desc > .text1 .heart__card2 > img:hover, .restaurants .card .resto__card3 .resto4__desc > .text1 .heart__card3 > img:hover, .restaurants .card .resto__card3 .resto4__desc > .text1 .heart__card4 > img:hover, .restaurants .card .resto__card4 > .resto1__desc > .text1 > .heart__card1 > img:hover, .restaurants .card .resto__card4 > .resto1__desc > .text1 .heart__card2 > img:hover, .restaurants .card .resto__card4 > .resto1__desc > .text1 .heart__card3 > img:hover, .restaurants .card .resto__card4 > .resto1__desc > .text1 .heart__card4 > img:hover, .restaurants .card .resto__card4 .resto2__desc > .text1 > .heart__card1 > img:hover, .restaurants .card .resto__card4 .resto2__desc > .text1 .heart__card2 > img:hover, .restaurants .card .resto__card4 .resto2__desc > .text1 .heart__card3 > img:hover, .restaurants .card .resto__card4 .resto2__desc > .text1 .heart__card4 > img:hover, .restaurants .card .resto__card4 .resto3__desc > .text1 > .heart__card1 > img:hover, .restaurants .card .resto__card4 .resto3__desc > .text1 .heart__card2 > img:hover, .restaurants .card .resto__card4 .resto3__desc > .text1 .heart__card3 > img:hover, .restaurants .card .resto__card4 .resto3__desc > .text1 .heart__card4 > img:hover, .restaurants .card .resto__card4 .resto4__desc > .text1 > .heart__card1 > img:hover, .restaurants .card .resto__card4 .resto4__desc > .text1 .heart__card2 > img:hover, .restaurants .card .resto__card4 .resto4__desc > .text1 .heart__card3 > img:hover, .restaurants .card .resto__card4 .resto4__desc > .text1 .heart__card4 > img:hover {
   cursor: pointer;
   z-index: 1;
   background: url(/ressources/images/heart/imageedit_4_5327351324.png);
@@ -448,8 +454,8 @@ body {
           transition-duration: 5s;
 }
 
-.restaurants > .resto__card1 > .resto1__desc > .text2, .restaurants > .resto__card1 .resto2__desc > .text2, .restaurants > .resto__card1 .resto3__desc > .text2, .restaurants > .resto__card1 .resto4__desc > .text2, .restaurants .resto__card2 > .resto1__desc > .text2, .restaurants .resto__card2 .resto2__desc > .text2, .restaurants .resto__card2 .resto3__desc > .text2, .restaurants .resto__card2 .resto4__desc > .text2, .restaurants .resto__card3 > .resto1__desc > .text2, .restaurants .resto__card3 .resto2__desc > .text2, .restaurants .resto__card3 .resto3__desc > .text2, .restaurants .resto__card3 .resto4__desc > .text2, .restaurants .resto__card4 > .resto1__desc > .text2, .restaurants .resto__card4 .resto2__desc > .text2, .restaurants .resto__card4 .resto3__desc > .text2, .restaurants .resto__card4 .resto4__desc > .text2 {
-  padding: 0px 20px;
+.restaurants .card > .resto__card1 > .resto1__desc > .text2, .restaurants .card > .resto__card1 .resto2__desc > .text2, .restaurants .card > .resto__card1 .resto3__desc > .text2, .restaurants .card > .resto__card1 .resto4__desc > .text2, .restaurants .card .resto__card2 > .resto1__desc > .text2, .restaurants .card .resto__card2 .resto2__desc > .text2, .restaurants .card .resto__card2 .resto3__desc > .text2, .restaurants .card .resto__card2 .resto4__desc > .text2, .restaurants .card .resto__card3 > .resto1__desc > .text2, .restaurants .card .resto__card3 .resto2__desc > .text2, .restaurants .card .resto__card3 .resto3__desc > .text2, .restaurants .card .resto__card3 .resto4__desc > .text2, .restaurants .card .resto__card4 > .resto1__desc > .text2, .restaurants .card .resto__card4 .resto2__desc > .text2, .restaurants .card .resto__card4 .resto3__desc > .text2, .restaurants .card .resto__card4 .resto4__desc > .text2 {
+  padding: 0px 0px 10px 20px;
   font-size: 18px;
   font-weight: lighter;
 }
@@ -469,6 +475,38 @@ body {
 
 @media screen and (min-width: 768px) {
   .restaurants {
+    background-color: #fafafaef;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .restaurants {
+    background-color: #fafafaef;
+  }
+}
+
+.restaurants > .card {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .restaurants > .card {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -484,13 +522,9 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
-}
-
-.restaurants > h1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 footer {
@@ -501,18 +535,28 @@ footer {
 footer .logo__footer {
   font-family: 'Shrikhand', cursive;
   font-size: 20px;
-  padding: 25px  25px 0px 25px;
+  padding: 25px  25px 25px 25px;
 }
 
-footer .proposition__restaurant {
+footer .proposition__restaurant, footer .partenaire, footer .mention__text, footer .contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  padding: 10px 25px;
 }
 
-footer .partenaire {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+footer .proposition__restaurant .ico__propos, footer .partenaire .ico__propos, footer .mention__text .ico__propos, footer .contact .ico__propos {
+  padding-right: 15px;
+}
+
+footer .proposition__restaurant .ico__partenaire, footer .partenaire .ico__partenaire, footer .mention__text .ico__partenaire, footer .contact .ico__partenaire {
+  padding-right: 5px;
+}
+
+footer .proposition__restaurant a, footer .partenaire a, footer .mention__text a, footer .contact a {
+  text-decoration: none;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */

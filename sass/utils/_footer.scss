@@ -4,14 +4,27 @@ footer{
     .logo__footer{
         font-family: 'Shrikhand', cursive;
         font-size: 20px;
-        padding: 25px  25px 0px 25px;
+        padding: 25px  25px 25px 25px;
+        
     }
-    .proposition__restaurant{
+    .proposition__restaurant, .partenaire, .mention__text, .contact{
         display: flex;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        padding: 10px 25px;
+        & .ico__propos{
+            padding-right: 15px;
+        }
+        & .ico__partenaire{
+            padding-right: 5px;
+        }
+        & a {
+            text-decoration: none;
+            color: white;
+
+        }
     }
-    .partenaire{
-        display: flex;
-    }
+    
     
     
 }
