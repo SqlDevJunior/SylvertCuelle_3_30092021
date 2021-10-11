@@ -22,7 +22,7 @@
             align-items: center;
             margin-top: 30px;
             margin-bottom: 30px;
-            background-color:$dark-gps-color;
+            background-color:$light-gps-color;
             border-radius: 30px;
             padding:15px 0;
             box-shadow: 5px 5px 10px 2px $dark-gps-color; 
@@ -72,7 +72,7 @@
         align-items: center;
         margin-top: 30px;
         margin-bottom:30px;
-        background-color:$dark-gps-color;
+        background-color:$light-gps-color;
         border-radius: 30px;
         padding:15px 0;
         box-shadow: 5px 5px 10px 2px $dark-gps-color;
@@ -120,7 +120,7 @@
         align-items: center;
         margin-top: 30px;
         margin-bottom: 30px;
-        background-color:$dark-gps-color;
+        background-color:$light-gps-color;
         border-radius: 30px;
         padding:15px 0;
         box-shadow: 5px 5px 10px 2px $dark-gps-color;
@@ -189,16 +189,28 @@
                 font-size: 13px;
                 display: flex;
                 & > .heart__card1 > img, .heart__card2 > img, .heart__card3 > img, .heart__card4 > img{
+                    position: relative;
                     z-index: 0;
                     display: flex;
                     align-items: center;
                     flex-direction: row;
                     transform: translateX(280%);
+                    
                     &:hover{
+                       
+                        position:absolute;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                         cursor: pointer;
-                        z-index: 1;
-                        background:url(/ressources/images/heart/imageedit_4_5327351324.png);
-                        transition-duration: 5s;
+                        z-index:1 ;
+                        background:url(/ressources/images/heart/heart2.png);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                       
+                        
+                       
+                       
                     
                     }
                 }

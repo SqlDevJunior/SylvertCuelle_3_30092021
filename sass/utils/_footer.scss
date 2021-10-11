@@ -5,8 +5,14 @@ footer{
         font-family: 'Shrikhand', cursive;
         font-size: 20px;
         padding: 25px  25px 25px 25px;
-        
     }
+        @include bp(tablet){
+            text-align: center;
+        }
+        @include bp(desktop){
+            text-align: center;
+            }
+            
     .proposition__restaurant, .partenaire, .mention__text, .contact{
         display: flex;
         font-family: 'Roboto', sans-serif;
@@ -22,6 +28,26 @@ footer{
             text-decoration: none;
             color: white;
 
+        }
+        @include bp(tablet){
+            display:inline-block;
+            flex-direction: row;
+            justify-content: center;
+          & .ico__partenaire, .ico__partenaire{
+            display:inline-block;
+            justify-content: center;
+           
+          }
+        }
+        @include bp(desktop){
+            display:inline-block;
+            flex-direction: row;
+            justify-content: center;
+          & .ico__partenaire, .ico__partenaire{
+            display:inline-block;
+            justify-content: center;
+           
+          }
         }
     }
     
