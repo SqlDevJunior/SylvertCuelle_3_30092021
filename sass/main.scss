@@ -2,6 +2,7 @@
 @import "./utils/functions";
 @import "./utils/mixins";
 @import "./utils/extensions";
+@import "./utils/footer";
 
 
 @import "./base/base";
@@ -13,10 +14,10 @@
 @import "./layout/nav";
 @import "./layout/container";
 @import "./layout/form";
-@import "./utils/footer";
 @import "./layout/loader";
 
 
 @import "./pages/work";
 @import "./pages/about";
 @import "./pages/project";
+

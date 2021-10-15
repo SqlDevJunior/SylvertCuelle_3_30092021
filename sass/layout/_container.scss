@@ -1,5 +1,7 @@
 //search
 .search__section {
+    
+    @include container__dimension;
     border-top: 2px solid grey;
     margin: auto;
     max-width: 100%;
@@ -22,6 +24,7 @@
     }
 }
 .description__title{
+    
     margin: auto;
     width: 100%;
     text-align: center;
@@ -41,12 +44,14 @@
     }
 }
 .exploration {
+    @include container__dimension;
     display: flex;
     justify-content: center;
     background-color: $light-gps-color;
     
 }
 .fonctionnement, .restaurants{
+    @include container__dimension;
     
     margin: auto;
     max-width: 100%;
@@ -65,6 +70,7 @@
         
     }
     @include bp(desktop) {
+        @include container__dimension;
         display:flex;
         flex-direction:row;
         & h1{
@@ -76,7 +82,7 @@
 
 }
 .restaurants{
-    
+    @include container__dimension;
    @include card__resto;
    > .heart__card1 > img{
        display: flex;

@@ -1,5 +1,5 @@
 footer{
-    background-color: $col-footer;
+    background-color:$col-footer;
     color: white;
     .logo__footer{
         font-family: 'Shrikhand', cursive;
@@ -30,27 +30,29 @@ footer{
 
         }
         @include bp(tablet){
-            display:inline-block;
+            display:inline-flex;
             flex-direction: row;
             justify-content: center;
-          & .ico__partenaire, .ico__partenaire{
-            display:inline-block;
+        & .proposition__restaurant, .partenaire{
+            display:inline-flex;
             justify-content: center;
-           
-          }
+        
+        }
         }
         @include bp(desktop){
-            display:inline-block;
+            display:inline-flex;
             flex-direction: row;
             justify-content: center;
-          & .ico__partenaire, .ico__partenaire{
-            display:inline-block;
+        & .proposition__restaurant, .partenaire{
+            display:inline-flex;
             justify-content: center;
-           
-          }
+        
+        }
         }
     }
-    
-    
-    
 }
+
+
+  
+    
+        

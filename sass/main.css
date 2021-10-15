@@ -1,3 +1,94 @@
+footer {
+  background-color: #333232;
+  color: white;
+}
+
+footer .logo__footer {
+  font-family: 'Shrikhand', cursive;
+  font-size: 20px;
+  padding: 25px  25px 25px 25px;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  footer {
+    text-align: center;
+  }
+}
+
+footer .proposition__restaurant, footer .partenaire, footer .mention__text, footer .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  padding: 10px 25px;
+}
+
+footer .proposition__restaurant .ico__propos, footer .partenaire .ico__propos, footer .mention__text .ico__propos, footer .contact .ico__propos {
+  padding-right: 15px;
+}
+
+footer .proposition__restaurant .ico__partenaire, footer .partenaire .ico__partenaire, footer .mention__text .ico__partenaire, footer .contact .ico__partenaire {
+  padding-right: 5px;
+}
+
+footer .proposition__restaurant a, footer .partenaire a, footer .mention__text a, footer .contact a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  footer .proposition__restaurant, footer .partenaire, footer .mention__text, footer .contact {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .proposition__restaurant .proposition__restaurant, footer .proposition__restaurant .partenaire, footer .partenaire .proposition__restaurant, footer .partenaire .partenaire, footer .mention__text .proposition__restaurant, footer .mention__text .partenaire, footer .contact .proposition__restaurant, footer .contact .partenaire {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  footer .proposition__restaurant, footer .partenaire, footer .mention__text, footer .contact {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .proposition__restaurant .proposition__restaurant, footer .proposition__restaurant .partenaire, footer .partenaire .proposition__restaurant, footer .partenaire .partenaire, footer .mention__text .proposition__restaurant, footer .mention__text .partenaire, footer .contact .proposition__restaurant, footer .contact .partenaire {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -19,8 +110,8 @@ body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
   background-image: linear-gradient(to bottom, #9356dc, #ff79da);
   margin: 32px 0 52px 0;
-  -webkit-box-shadow: 5px 5px 10px 2px #d1d1d1;
-          box-shadow: 5px 5px 10px 2px #d1d1d1;
+  -webkit-box-shadow: 5px 5px 10px 2px #f2f2f2;
+          box-shadow: 5px 5px 10px 2px #f2f2f2;
 }
 
 .choice {
@@ -47,11 +138,11 @@ body {
           align-items: center;
   margin-top: 30px;
   margin-bottom: 30px;
-  background-color: #fcfcfc;
+  background-color: white;
   border-radius: 30px;
   padding: 15px 0;
-  -webkit-box-shadow: 5px 5px 10px 2px #d1d1d1;
-          box-shadow: 5px 5px 10px 2px #d1d1d1;
+  -webkit-box-shadow: 5px 5px 10px 2px #f2f2f2;
+          box-shadow: 5px 5px 10px 2px #f2f2f2;
 }
 
 .choice > .choice__btn > .choice__number {
@@ -80,7 +171,7 @@ body {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  color: #d1d1d1;
+  color: #f2f2f2;
 }
 
 .choice > .choice__btn .choice__text {
@@ -120,11 +211,11 @@ body {
           align-items: center;
   margin-top: 30px;
   margin-bottom: 30px;
-  background-color: #fcfcfc;
+  background-color: white;
   border-radius: 30px;
   padding: 15px 0;
-  -webkit-box-shadow: 5px 5px 10px 2px #d1d1d1;
-          box-shadow: 5px 5px 10px 2px #d1d1d1;
+  -webkit-box-shadow: 5px 5px 10px 2px #f2f2f2;
+          box-shadow: 5px 5px 10px 2px #f2f2f2;
 }
 
 .menu > .menu__btn > .menu__number {
@@ -153,7 +244,7 @@ body {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  color: #d1d1d1;
+  color: #f2f2f2;
 }
 
 .menu > .menu__btn .menu__text {
@@ -193,11 +284,11 @@ body {
           align-items: center;
   margin-top: 30px;
   margin-bottom: 30px;
-  background-color: #fcfcfc;
+  background-color: white;
   border-radius: 30px;
   padding: 15px 0;
-  -webkit-box-shadow: 5px 5px 10px 2px #d1d1d1;
-          box-shadow: 5px 5px 10px 2px #d1d1d1;
+  -webkit-box-shadow: 5px 5px 10px 2px #f2f2f2;
+          box-shadow: 5px 5px 10px 2px #f2f2f2;
 }
 
 .savor > .savor__btn > .savor__number {
@@ -277,6 +368,8 @@ body {
 }
 
 .search__section {
+  margin: auto;
+  max-width: 1660px;
   border-top: 2px solid grey;
   margin: auto;
   max-width: 100%;
@@ -286,7 +379,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #d1d1d1;
+  background-color: #f2f2f2;
 }
 
 .search__section .search__ico {
@@ -303,14 +396,14 @@ body {
   border: none;
   font-size: 17px;
   font-weight: bold;
-  background-color: #d1d1d1;
+  background-color: #f2f2f2;
 }
 
 .description__title {
   margin: auto;
   width: 100%;
   text-align: center;
-  background-color: #fcfcfc;
+  background-color: white;
 }
 
 .description__title h1 {
@@ -330,16 +423,20 @@ body {
 }
 
 .exploration {
+  margin: auto;
+  max-width: 1660px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #fcfcfc;
+  background-color: white;
 }
 
 .fonctionnement, .restaurants {
+  margin: auto;
+  max-width: 1660px;
   margin: auto;
   max-width: 100%;
 }
@@ -366,6 +463,8 @@ body {
 
 @media screen and (min-width: 1200px) {
   .fonctionnement, .restaurants {
+    margin: auto;
+    max-width: 1660px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -377,6 +476,11 @@ body {
   .fonctionnement h1, .restaurants h1 {
     margin: 44px 0 0 20px;
   }
+}
+
+.restaurants {
+  margin: auto;
+  max-width: 1660px;
 }
 
 .restaurants .title {
@@ -420,6 +524,8 @@ body {
 
 .restaurants .card > .resto__card1 > .resto1__img > img, .restaurants .card > .resto__card1 .resto2__img > img, .restaurants .card > .resto__card1 .resto3__img > img, .restaurants .card > .resto__card1 .resto4__img > img, .restaurants .card .resto__card2 > .resto1__img > img, .restaurants .card .resto__card2 .resto2__img > img, .restaurants .card .resto__card2 .resto3__img > img, .restaurants .card .resto__card2 .resto4__img > img, .restaurants .card .resto__card3 > .resto1__img > img, .restaurants .card .resto__card3 .resto2__img > img, .restaurants .card .resto__card3 .resto3__img > img, .restaurants .card .resto__card3 .resto4__img > img, .restaurants .card .resto__card4 > .resto1__img > img, .restaurants .card .resto__card4 .resto2__img > img, .restaurants .card .resto__card4 .resto3__img > img, .restaurants .card .resto__card4 .resto4__img > img {
   border-radius: 20px 20px 0px 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .restaurants .card > .resto__card1 > .resto1__desc > .text1, .restaurants .card > .resto__card1 .resto2__desc > .text1, .restaurants .card > .resto__card1 .resto3__desc > .text1, .restaurants .card > .resto__card1 .resto4__desc > .text1, .restaurants .card .resto__card2 > .resto1__desc > .text1, .restaurants .card .resto__card2 .resto2__desc > .text1, .restaurants .card .resto__card2 .resto3__desc > .text1, .restaurants .card .resto__card2 .resto4__desc > .text1, .restaurants .card .resto__card3 > .resto1__desc > .text1, .restaurants .card .resto__card3 .resto2__desc > .text1, .restaurants .card .resto__card3 .resto3__desc > .text1, .restaurants .card .resto__card3 .resto4__desc > .text1, .restaurants .card .resto__card4 > .resto1__desc > .text1, .restaurants .card .resto__card4 .resto2__desc > .text1, .restaurants .card .resto__card4 .resto3__desc > .text1, .restaurants .card .resto__card4 .resto4__desc > .text1 {
@@ -428,32 +534,32 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .restaurants .card > .resto__card1 > .resto1__desc > .text1 > .heart__card1 > i, .restaurants .card > .resto__card1 > .resto1__desc > .text1 .heart__card2 > i, .restaurants .card > .resto__card1 > .resto1__desc > .text1 .heart__card3 > i, .restaurants .card > .resto__card1 > .resto1__desc > .text1 .heart__card4 > i, .restaurants .card > .resto__card1 .resto2__desc > .text1 > .heart__card1 > i, .restaurants .card > .resto__card1 .resto2__desc > .text1 .heart__card2 > i, .restaurants .card > .resto__card1 .resto2__desc > .text1 .heart__card3 > i, .restaurants .card > .resto__card1 .resto2__desc > .text1 .heart__card4 > i, .restaurants .card > .resto__card1 .resto3__desc > .text1 > .heart__card1 > i, .restaurants .card > .resto__card1 .resto3__desc > .text1 .heart__card2 > i, .restaurants .card > .resto__card1 .resto3__desc > .text1 .heart__card3 > i, .restaurants .card > .resto__card1 .resto3__desc > .text1 .heart__card4 > i, .restaurants .card > .resto__card1 .resto4__desc > .text1 > .heart__card1 > i, .restaurants .card > .resto__card1 .resto4__desc > .text1 .heart__card2 > i, .restaurants .card > .resto__card1 .resto4__desc > .text1 .heart__card3 > i, .restaurants .card > .resto__card1 .resto4__desc > .text1 .heart__card4 > i, .restaurants .card .resto__card2 > .resto1__desc > .text1 > .heart__card1 > i, .restaurants .card .resto__card2 > .resto1__desc > .text1 .heart__card2 > i, .restaurants .card .resto__card2 > .resto1__desc > .text1 .heart__card3 > i, .restaurants .card .resto__card2 > .resto1__desc > .text1 .heart__card4 > i, .restaurants .card .resto__card2 .resto2__desc > .text1 > .heart__card1 > i, .restaurants .card .resto__card2 .resto2__desc > .text1 .heart__card2 > i, .restaurants .card .resto__card2 .resto2__desc > .text1 .heart__card3 > i, .restaurants .card .resto__card2 .resto2__desc > .text1 .heart__card4 > i, .restaurants .card .resto__card2 .resto3__desc > .text1 > .heart__card1 > i, .restaurants .card .resto__card2 .resto3__desc > .text1 .heart__card2 > i, .restaurants .card .resto__card2 .resto3__desc > .text1 .heart__card3 > i, .restaurants .card .resto__card2 .resto3__desc > .text1 .heart__card4 > i, .restaurants .card .resto__card2 .resto4__desc > .text1 > .heart__card1 > i, .restaurants .card .resto__card2 .resto4__desc > .text1 .heart__card2 > i, .restaurants .card .resto__card2 .resto4__desc > .text1 .heart__card3 > i, .restaurants .card .resto__card2 .resto4__desc > .text1 .heart__card4 > i, .restaurants .card .resto__card3 > .resto1__desc > .text1 > .heart__card1 > i, .restaurants .card .resto__card3 > .resto1__desc > .text1 .heart__card2 > i, .restaurants .card .resto__card3 > .resto1__desc > .text1 .heart__card3 > i, .restaurants .card .resto__card3 > .resto1__desc > .text1 .heart__card4 > i, .restaurants .card .resto__card3 .resto2__desc > .text1 > .heart__card1 > i, .restaurants .card .resto__card3 .resto2__desc > .text1 .heart__card2 > i, .restaurants .card .resto__card3 .resto2__desc > .text1 .heart__card3 > i, .restaurants .card .resto__card3 .resto2__desc > .text1 .heart__card4 > i, .restaurants .card .resto__card3 .resto3__desc > .text1 > .heart__card1 > i, .restaurants .card .resto__card3 .resto3__desc > .text1 .heart__card2 > i, .restaurants .card .resto__card3 .resto3__desc > .text1 .heart__card3 > i, .restaurants .card .resto__card3 .resto3__desc > .text1 .heart__card4 > i, .restaurants .card .resto__card3 .resto4__desc > .text1 > .heart__card1 > i, .restaurants .card .resto__card3 .resto4__desc > .text1 .heart__card2 > i, .restaurants .card .resto__card3 .resto4__desc > .text1 .heart__card3 > i, .restaurants .card .resto__card3 .resto4__desc > .text1 .heart__card4 > i, .restaurants .card .resto__card4 > .resto1__desc > .text1 > .heart__card1 > i, .restaurants .card .resto__card4 > .resto1__desc > .text1 .heart__card2 > i, .restaurants .card .resto__card4 > .resto1__desc > .text1 .heart__card3 > i, .restaurants .card .resto__card4 > .resto1__desc > .text1 .heart__card4 > i, .restaurants .card .resto__card4 .resto2__desc > .text1 > .heart__card1 > i, .restaurants .card .resto__card4 .resto2__desc > .text1 .heart__card2 > i, .restaurants .card .resto__card4 .resto2__desc > .text1 .heart__card3 > i, .restaurants .card .resto__card4 .resto2__desc > .text1 .heart__card4 > i, .restaurants .card .resto__card4 .resto3__desc > .text1 > .heart__card1 > i, .restaurants .card .resto__card4 .resto3__desc > .text1 .heart__card2 > i, .restaurants .card .resto__card4 .resto3__desc > .text1 .heart__card3 > i, .restaurants .card .resto__card4 .resto3__desc > .text1 .heart__card4 > i, .restaurants .card .resto__card4 .resto4__desc > .text1 > .heart__card1 > i, .restaurants .card .resto__card4 .resto4__desc > .text1 .heart__card2 > i, .restaurants .card .resto__card4 .resto4__desc > .text1 .heart__card3 > i, .restaurants .card .resto__card4 .resto4__desc > .text1 .heart__card4 > i {
-  position: relative;
   z-index: 0;
   display: inline-block;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-transform: translateX(300%);
-          transform: translateX(300%);
+  padding-right: 10px;
 }
 
 .restaurants .card > .resto__card1 > .resto1__desc > .text1 > .heart__card1 > i:hover, .restaurants .card > .resto__card1 > .resto1__desc > .text1 .heart__card2 > i:hover, .restaurants .card > .resto__card1 > .resto1__desc > .text1 .heart__card3 > i:hover, .restaurants .card > .resto__card1 > .resto1__desc > .text1 .heart__card4 > i:hover, .restaurants .card > .resto__card1 .resto2__desc > .text1 > .heart__card1 > i:hover, .restaurants .card > .resto__card1 .resto2__desc > .text1 .heart__card2 > i:hover, .restaurants .card > .resto__card1 .resto2__desc > .text1 .heart__card3 > i:hover, .restaurants .card > .resto__card1 .resto2__desc > .text1 .heart__card4 > i:hover, .restaurants .card > .resto__card1 .resto3__desc > .text1 > .heart__card1 > i:hover, .restaurants .card > .resto__card1 .resto3__desc > .text1 .heart__card2 > i:hover, .restaurants .card > .resto__card1 .resto3__desc > .text1 .heart__card3 > i:hover, .restaurants .card > .resto__card1 .resto3__desc > .text1 .heart__card4 > i:hover, .restaurants .card > .resto__card1 .resto4__desc > .text1 > .heart__card1 > i:hover, .restaurants .card > .resto__card1 .resto4__desc > .text1 .heart__card2 > i:hover, .restaurants .card > .resto__card1 .resto4__desc > .text1 .heart__card3 > i:hover, .restaurants .card > .resto__card1 .resto4__desc > .text1 .heart__card4 > i:hover, .restaurants .card .resto__card2 > .resto1__desc > .text1 > .heart__card1 > i:hover, .restaurants .card .resto__card2 > .resto1__desc > .text1 .heart__card2 > i:hover, .restaurants .card .resto__card2 > .resto1__desc > .text1 .heart__card3 > i:hover, .restaurants .card .resto__card2 > .resto1__desc > .text1 .heart__card4 > i:hover, .restaurants .card .resto__card2 .resto2__desc > .text1 > .heart__card1 > i:hover, .restaurants .card .resto__card2 .resto2__desc > .text1 .heart__card2 > i:hover, .restaurants .card .resto__card2 .resto2__desc > .text1 .heart__card3 > i:hover, .restaurants .card .resto__card2 .resto2__desc > .text1 .heart__card4 > i:hover, .restaurants .card .resto__card2 .resto3__desc > .text1 > .heart__card1 > i:hover, .restaurants .card .resto__card2 .resto3__desc > .text1 .heart__card2 > i:hover, .restaurants .card .resto__card2 .resto3__desc > .text1 .heart__card3 > i:hover, .restaurants .card .resto__card2 .resto3__desc > .text1 .heart__card4 > i:hover, .restaurants .card .resto__card2 .resto4__desc > .text1 > .heart__card1 > i:hover, .restaurants .card .resto__card2 .resto4__desc > .text1 .heart__card2 > i:hover, .restaurants .card .resto__card2 .resto4__desc > .text1 .heart__card3 > i:hover, .restaurants .card .resto__card2 .resto4__desc > .text1 .heart__card4 > i:hover, .restaurants .card .resto__card3 > .resto1__desc > .text1 > .heart__card1 > i:hover, .restaurants .card .resto__card3 > .resto1__desc > .text1 .heart__card2 > i:hover, .restaurants .card .resto__card3 > .resto1__desc > .text1 .heart__card3 > i:hover, .restaurants .card .resto__card3 > .resto1__desc > .text1 .heart__card4 > i:hover, .restaurants .card .resto__card3 .resto2__desc > .text1 > .heart__card1 > i:hover, .restaurants .card .resto__card3 .resto2__desc > .text1 .heart__card2 > i:hover, .restaurants .card .resto__card3 .resto2__desc > .text1 .heart__card3 > i:hover, .restaurants .card .resto__card3 .resto2__desc > .text1 .heart__card4 > i:hover, .restaurants .card .resto__card3 .resto3__desc > .text1 > .heart__card1 > i:hover, .restaurants .card .resto__card3 .resto3__desc > .text1 .heart__card2 > i:hover, .restaurants .card .resto__card3 .resto3__desc > .text1 .heart__card3 > i:hover, .restaurants .card .resto__card3 .resto3__desc > .text1 .heart__card4 > i:hover, .restaurants .card .resto__card3 .resto4__desc > .text1 > .heart__card1 > i:hover, .restaurants .card .resto__card3 .resto4__desc > .text1 .heart__card2 > i:hover, .restaurants .card .resto__card3 .resto4__desc > .text1 .heart__card3 > i:hover, .restaurants .card .resto__card3 .resto4__desc > .text1 .heart__card4 > i:hover, .restaurants .card .resto__card4 > .resto1__desc > .text1 > .heart__card1 > i:hover, .restaurants .card .resto__card4 > .resto1__desc > .text1 .heart__card2 > i:hover, .restaurants .card .resto__card4 > .resto1__desc > .text1 .heart__card3 > i:hover, .restaurants .card .resto__card4 > .resto1__desc > .text1 .heart__card4 > i:hover, .restaurants .card .resto__card4 .resto2__desc > .text1 > .heart__card1 > i:hover, .restaurants .card .resto__card4 .resto2__desc > .text1 .heart__card2 > i:hover, .restaurants .card .resto__card4 .resto2__desc > .text1 .heart__card3 > i:hover, .restaurants .card .resto__card4 .resto2__desc > .text1 .heart__card4 > i:hover, .restaurants .card .resto__card4 .resto3__desc > .text1 > .heart__card1 > i:hover, .restaurants .card .resto__card4 .resto3__desc > .text1 .heart__card2 > i:hover, .restaurants .card .resto__card4 .resto3__desc > .text1 .heart__card3 > i:hover, .restaurants .card .resto__card4 .resto3__desc > .text1 .heart__card4 > i:hover, .restaurants .card .resto__card4 .resto4__desc > .text1 > .heart__card1 > i:hover, .restaurants .card .resto__card4 .resto4__desc > .text1 .heart__card2 > i:hover, .restaurants .card .resto__card4 .resto4__desc > .text1 .heart__card3 > i:hover, .restaurants .card .resto__card4 .resto4__desc > .text1 .heart__card4 > i:hover {
-  position: absolute;
+  -webkit-transition: 1.1s 0s linear;
+  transition: 1.1s 0s linear;
   display: inline-block;
   cursor: pointer;
-  background: -webkit-linear-gradient(top, #9356dc 50%, #ff79da 50%);
+  background: -webkit-linear-gradient(180deg, #9356dc 0%, #ff79da 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-weight: bold;
+  z-index: 1;
 }
 
 .restaurants .card > .resto__card1 > .resto1__desc > .text2, .restaurants .card > .resto__card1 .resto2__desc > .text2, .restaurants .card > .resto__card1 .resto3__desc > .text2, .restaurants .card > .resto__card1 .resto4__desc > .text2, .restaurants .card .resto__card2 > .resto1__desc > .text2, .restaurants .card .resto__card2 .resto2__desc > .text2, .restaurants .card .resto__card2 .resto3__desc > .text2, .restaurants .card .resto__card2 .resto4__desc > .text2, .restaurants .card .resto__card3 > .resto1__desc > .text2, .restaurants .card .resto__card3 .resto2__desc > .text2, .restaurants .card .resto__card3 .resto3__desc > .text2, .restaurants .card .resto__card3 .resto4__desc > .text2, .restaurants .card .resto__card4 > .resto1__desc > .text2, .restaurants .card .resto__card4 .resto2__desc > .text2, .restaurants .card .resto__card4 .resto3__desc > .text2, .restaurants .card .resto__card4 .resto4__desc > .text2 {
@@ -529,110 +635,37 @@ body {
   }
 }
 
-footer {
-  background-color: #333232;
-  color: white;
-}
-
-footer .logo__footer {
-  font-family: 'Shrikhand', cursive;
-  font-size: 20px;
-  padding: 25px  25px 25px 25px;
-}
-
-@media screen and (min-width: 768px) {
-  footer {
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  footer {
-    text-align: center;
-  }
-}
-
-footer .proposition__restaurant, footer .partenaire, footer .mention__text, footer .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  padding: 10px 25px;
-}
-
-footer .proposition__restaurant .ico__propos, footer .partenaire .ico__propos, footer .mention__text .ico__propos, footer .contact .ico__propos {
-  padding-right: 15px;
-}
-
-footer .proposition__restaurant .ico__partenaire, footer .partenaire .ico__partenaire, footer .mention__text .ico__partenaire, footer .contact .ico__partenaire {
-  padding-right: 5px;
-}
-
-footer .proposition__restaurant a, footer .partenaire a, footer .mention__text a, footer .contact a {
-  text-decoration: none;
-  color: white;
-}
-
-@media screen and (min-width: 768px) {
-  footer .proposition__restaurant, footer .partenaire, footer .mention__text, footer .contact {
-    display: inline-block;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  footer .proposition__restaurant .ico__partenaire, footer .proposition__restaurant .ico__partenaire, footer .partenaire .ico__partenaire, footer .partenaire .ico__partenaire, footer .mention__text .ico__partenaire, footer .mention__text .ico__partenaire, footer .contact .ico__partenaire, footer .contact .ico__partenaire {
-    display: inline-block;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  footer .proposition__restaurant, footer .partenaire, footer .mention__text, footer .contact {
-    display: inline-block;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  footer .proposition__restaurant .ico__partenaire, footer .proposition__restaurant .ico__partenaire, footer .partenaire .ico__partenaire, footer .partenaire .ico__partenaire, footer .mention__text .ico__partenaire, footer .mention__text .ico__partenaire, footer .contact .ico__partenaire, footer .contact .ico__partenaire {
-    display: inline-block;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
 /*.loading__contain{
-    opacity: 10%;
+    visibility: hidden;
+    
+    > .loader{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        visibility: visible;
+        
+        >.loading{
+            
+            top:45%;
+            left:45%;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border-top:10px solid #9356dc ;
+            position: relative;
+            animation: a1 2s linear infinite;
+            visibility: visible;
+            
+        }  
+    }
    
+    
+
 }
 
 
-.loading{
-    top:350px;
-    right: 0px;
-    left: 0px;
-    bottom: 0px;
-    margin: auto;
-    box-sizing: border-box;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border-top:10px solid #9356dc ;
-    position: relative;
-    animation: a1 2s linear infinite;
-    transition: loading 10s;
-}
+
 .loading::before, .loading::after{
     content: '';
     width: 200px;
@@ -640,7 +673,7 @@ footer .proposition__restaurant a, footer .partenaire a, footer .mention__text a
     position: absolute;
     left: 0;
     box-sizing: border-box;
-    top: -10px;
+    top:-10px;
     border-radius: 50%;
 
 }
@@ -652,16 +685,15 @@ footer .proposition__restaurant a, footer .partenaire a, footer .mention__text a
     border-top: 10px solid #99e2d0;
     transform: rotate(240deg);
 }
-.loading span{
-    position: absolute;
-    width: 200px;
-    height:200px;
-    text-align: center;
-    line-height: 200px;
-}
+
 @keyframes a1{
-    to{
-        transform:rotate(360deg)
+    0%{
+        transform:rotate(-360deg);
+        
     }
-}*/
+    100%{
+        
+    }
+}
+*/
 /*# sourceMappingURL=main.css.map */
