@@ -75,6 +75,14 @@ max-width: 100%;
      flex-direction: column;
      background-color: $dark-gps-color;
  }
+ .container__icon:hover{
+     display:flex;
+     justify-content: right;
+     align-items: center;
+     background-color: $col-tertiory;
+     color:white;
+     
+ }
  .container__title{
      width: 100%;
      background-color: $dark-gps-color;

@@ -47,7 +47,7 @@
         .choice__ico{
             display: flex;
             justify-content: left;
-            color:$dark-gps-color;
+            color:rgb(177, 173, 173);
         
             
         }
@@ -59,8 +59,8 @@
         }
         &:hover{
             cursor: pointer;
-            background-color: white;
-            transition: 0.5s;
+            background-color: rgb(179, 136, 136);
+            transition: all 1s ;
         }
         }
 }
@@ -96,7 +96,7 @@
     .menu__ico{
         display: flex;
         justify-content: left;
-        color: $dark-gps-color;
+        color:rgb(177, 173, 173);
         
     }
     .menu__text{
@@ -181,14 +181,20 @@
         background-color: $gps-color;
         margin:auto;
         width: 100%;
+        
         > .resto__card1, .resto__card2, .resto__card3, .resto__card4 {
             background-color: white;
             margin: 10px 20px 20px 20px;
-            object-fit: cover;
+            object-fit: contain;
             border-radius: 20px;
-            > .resto1__img > img, .resto2__img > img, .resto3__img > img, .resto4__img > img{
-            border-radius: 20px 20px 0px 0px;
-            object-fit: cover;
+           
+                > .resto1__img > img, .resto2__img > img, .resto3__img > img, .resto4__img > img{
+                border-radius: 20px 20px 0px 0px;
+                object-fit: contain;
+                
+                }
+            
+               
             }
             > .resto1__desc > .text1, .resto2__desc > .text1, .resto3__desc > .text1, .resto4__desc > .text1 {
                 padding: 5px 0px 5px 20px;
@@ -218,8 +224,8 @@
     
         }
             
-    }
 }
+
         
 @mixin heart{
     z-index: 0;

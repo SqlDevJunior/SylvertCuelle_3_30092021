@@ -1,8 +1,11 @@
 //search
+.localisation{
+    background-color: $light-gps-color;
+}
 .search__section {
     
     @include container__dimension;
-    border-top: 2px solid grey;
+    box-shadow:inset 1px 3px 5px 1px rgba(0,0,0,0.42);
     margin: auto;
     max-width: 100%;
     display: flex;
@@ -45,10 +48,14 @@
 }
 .exploration {
     @include container__dimension;
+    width:100%;
     display: flex;
     justify-content: center;
     background-color: $light-gps-color;
     
+}
+.card_restaurants{
+    background-color: $light-gps-color;
 }
 .fonctionnement, .restaurants{
     @include container__dimension;
