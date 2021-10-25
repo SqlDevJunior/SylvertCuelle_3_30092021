@@ -31,7 +31,9 @@
             border-radius: 30px;
             padding:15px 0;
             box-shadow: 5px 5px 10px 2px $dark-gps-color; 
+           
             
+        
             > .choice__number{
                 display: flex;
                 justify-content: center;
@@ -59,11 +61,14 @@
         }
         &:hover{
             cursor: pointer;
-            background-color: rgb(179, 136, 136);
-            transition: all 1s ;
-        }
+            background-color:white;
+            transition-duration:2s ;
         }
 }
+}
+    
+
+
 @mixin button__menu{
     display: flex ;
     width: 100%;
@@ -265,36 +270,41 @@
 
 
 @mixin contain__choice{
-    display:inline-block;
     flex-direction: row;
     margin: 20px 20px 4px 20px;
-    padding:10px;
     background-color: white;
     border-radius: 20px;
 
         & .title__enter{
-        display: flex;
+        display: inline-block;
         flex-direction: row;
-        flex-wrap: nowrap;
+        flex-wrap:nowrap;
+        padding: 10px;
         > h3{
+            flex-wrap: nowrap;
+            flex-direction: row;
             font-weight: normal;
             font-size:17px;
         }
     }
         > .legend__enter{
-        display: flex;
+        display: inline-block;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-between;
+        padding:10px;
         > h4{
             font-weight: lighter;
             font-size:15px;
         > p{
+            display: inline-flex;
             font-size:17px;
         }
         }
       
     }
 }
+
+    
 
 
