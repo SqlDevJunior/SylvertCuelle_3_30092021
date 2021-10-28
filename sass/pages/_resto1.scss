@@ -136,3 +136,96 @@
     margin: 32px 0 72px 0;
     box-shadow: 5px 5px 10px 2px $dark-gps-color;
 }
+.menu__enter__block > .btn--1 {
+    animation: loadingbtnstep 0.8s 0.2s backwards ease;
+}
+.menu__enter__block__btn {
+    box-shadow: none;
+}
+.menu__enter__block__btn:hover {
+    box-shadow: 0.25rem 0.25rem 15px #7b7171;
+}
+.menu__enter__block__btn {
+    background-color: white;
+    width: 90%;
+    height: 75px;
+    border-radius: 20px;
+    box-shadow: 0.25rem 0.25rem 5px #c5c0c0;
+    padding: 0 0 0 1em;
+    margin: .75em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+@keyframes loadingbtnstep {
+    0% {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.menu__enter__block__btn__name {
+    width: 85%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.menu__enter__block__btn__name__title {
+    font-size: 1em;
+    margin: 2% 0 0 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.menu__enter__block__btn__name__details {
+    margin: 1% 0 2% 0;
+    opacity: 0.5;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+.menu__enter__block__btn__price {
+    width: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 1.4em 1.5em 0 1em;
+}
+.menu__enter__block__btn__order {
+    background-color: #99E2D0;
+    width: 80px;
+    height: 75px;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -5em;
+    transition-duration: .5s;
+}
+.menu__enter__block__btn:hover > .menu__enter__block__btn__order {
+    margin-right: 0;
+}
+.menu__enter__block__btn:hover > .menuenter__block__btn__order > .menu__enter__block__btn__order__container {
+    transform: rotate(360deg);
+}
+.menu__enter__block__btn__order__container {
+    display: flex;
+    justify-content: center;
+    border-radius: 100px;
+    width: 35px;
+    transform: rotate(0deg);
+    transition-duration: .65s;
+}
+
+.menu__enter__block__btn__order__container__icon{
+    >i{
+        width: 1.2em;
+        transform: rotate(360deg);
+        color:white;
+    }
+}

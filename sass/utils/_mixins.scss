@@ -173,7 +173,7 @@
     .title { 
         display: flex;
         justify-content: left;
-        background-color: $gps-color;
+        background-color: #fcfcfc;
         padding-bottom: 28px;
         
     }
@@ -183,17 +183,17 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background-color: $gps-color;
+        background-color: #fcfcfc;
         margin:auto;
         width: 100%;
         
-        > .resto__card1, .resto__card2, .resto__card3, .resto__card4 {
+         .resto__card1, .resto__card2, .resto__card3, .resto__card4 {
             background-color: white;
             margin: 10px 20px 20px 20px;
             object-fit: contain;
             border-radius: 20px;
            
-                > .resto1__img > img, .resto2__img > img, .resto3__img > img, .resto4__img > img{
+                > .resto2__img > img, .resto2__img > img, .resto3__img > img, .resto4__img > img{
                 border-radius: 20px 20px 0px 0px;
                 object-fit: contain;
                 
@@ -201,7 +201,7 @@
             
                
             }
-            > .resto1__desc > .text1, .resto2__desc > .text1, .resto3__desc > .text1, .resto4__desc > .text1 {
+             & > .resto1__desc > .text1, .resto2__desc > .text1, .resto3__desc > .text1, .resto4__desc > .text1 {
                 padding: 5px 0px 5px 20px;
                 font-size: 13px;
                 display: flex;

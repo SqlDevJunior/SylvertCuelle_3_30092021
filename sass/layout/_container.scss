@@ -55,10 +55,11 @@
     
 }
 .card{
-    background-color: $light-gps-color;
+    background-color: #fcfcfc;
 }
 .fonctionnement, .restaurants{
     @include container__dimension;
+    
     
     margin: auto;
     max-width: 100%;
@@ -88,7 +89,13 @@
     }
 
 }
+.card__restaurants{
+    background-color: #fcfcfc;
+}
+
 .restaurants{
+    background-color: #fcfcfc;
+    
     @include container__dimension;
    @include card__resto;
    > .heart__card1 > img{
@@ -97,17 +104,17 @@
        justify-content: right;
    }
    @include bp(tablet){
-    background-color:$gps-color; 
+    background-color:$light-gps-color; 
    }
    
    @include bp(desktop){
-    background-color:$gps-color; 
+    background-color:$light-gps-color; 
    }
    
   
    
     > .card{ 
-
+       
         @include bp(tablet);
         display: inline-flex;
         flex-wrap: wrap;
@@ -132,8 +139,16 @@
         }
     }
 }
-    
+.resto1__img{
+    > a{
+        > img{
+            border-radius: 20px;
+        }
+    }
+} 
 
+
+    
    
 
 
