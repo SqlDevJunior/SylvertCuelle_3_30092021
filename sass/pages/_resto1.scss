@@ -14,10 +14,12 @@
 
 
 //*image principale*//
+.image__header{
+    height:16rem;
+}
 .image__plats1{
   
-    max-width: 100%;
-    max-height: 32rem;
+    height: 17rem;
     width: 100%;
     object-fit: cover;
     box-shadow:-32px -38px 2px 25px rgba(0,0,0,0) ;
@@ -32,17 +34,34 @@
     display: flex;
     flex-direction: column;
     background: $gps-color;
-    border-radius: 20px;
+    border-radius: 40px 40px 0 0;
+    
+    @include bp(desktop){
+        width:60%;
+
+    }
+    
+    @include bp(tablet){
+        width: 70%;
+    }
+   
+}
+
     
    
 
-    > .title__resto1{
-        width: 100%;
-        display: flex;
-        border-radius: 30px 30px 0px 0px;
-        background-color: $dark-gps-color;
-       
+    .title__resto1{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaeaea;
+  
+    
     }
+
      > .title__resto1 > h2{
 
          z-index: 1;
@@ -54,9 +73,10 @@
          font-size: 25px;
          justify-content: center;
          
+         
      }
 
-     & .heart__resto1{
+       .heart__resto1{
          padding-top: 20px;
          display:flex;
          justify-content:center;
@@ -72,7 +92,7 @@
         }
     }
 
- }
+ 
  .container__title >h2{
      font-weight: lighter;
      border-bottom: 4px solid $col-tertiory;
@@ -110,10 +130,10 @@
      }
  }   
 
- .container__entrée{
+ .container__enter{
     animation: fadein 3s ease-in-out;
  }
- .container__plats{
+ .container__dishes{
     animation: fadein 6s ease-in-out;
  }
  .container__dessert{
@@ -121,31 +141,25 @@
  }
  
 
-.commander{
-    display:flex;
-    justify-content: center;
-}
-.btn__commander{
-    
-    font-size: 17px;
-    color: white;
-    border-radius: 1.5rem;
-    cursor:pointer;
-    padding: 0.75rem 1rem;
-    background-image: $black-img-degrad;
-    margin: 32px 0 72px 0;
-    box-shadow: 5px 5px 10px 2px $dark-gps-color;
-}
-.menu__enter__block > .btn--1 {
+
+//menu a la française//
+
+.menu__enter__block > .btn--1, .menu__enter__block > .btn--2, .menu__enter__block > .btn--3  {
     animation: loadingbtnstep 0.8s 0.2s backwards ease;
 }
-.menu__enter__block__btn {
+.menu__dishes__block > .btn--1, .menu__dishes__block > .btn--2, .menu__dishes__block > .btn--3{
+    animation: loadingbtnstep 0.8s 0.2s backwards ease;
+}
+.menu__dessert__block > .btn--1, .menu__dessert__block > .btn--2, .menu__dessert__block > .btn--3{
+    animation: loadingbtnstep 0.8s 0.2s backwards ease;
+}
+.menu__enter__block__btn, .menu__dishes__block__btn, .menu__dessert__block__btn   {
     box-shadow: none;
 }
-.menu__enter__block__btn:hover {
+.menu__enter__block__btn:hover, .menu__dishes__block__btn:hover, .menu__dessert__block__btn:hover {
     box-shadow: 0.25rem 0.25rem 15px #7b7171;
 }
-.menu__enter__block__btn {
+.menu__enter__block__btn, .menu__dishes__block__btn, .menu__dessert__block__btn {
     background-color: white;
     width: 90%;
     height: 75px;
@@ -168,20 +182,20 @@
         transform: translateY(0px);
     }
 }
-.menu__enter__block__btn__name {
+.menu__enter__block__btn__name, .menu__dishes__block__btn__name, .menu__dessert__block__btn__name {
     width: 85%;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
 }
-.menu__enter__block__btn__name__title {
+.menu__enter__block__btn__name__title, .menu__dishes__block__btn__name__title, .menu__dessert__block__btn__name__title {
     font-size: 1em;
     margin: 2% 0 0 0;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
 }
-.menu__enter__block__btn__name__details {
+.menu__enter__block__btn__name__details, .menu__dishes__block__btn__name__details, .menu__dessert__block__btn__name__details {
     margin: 1% 0 2% 0;
     opacity: 0.5;
     text-overflow: ellipsis;
@@ -190,13 +204,13 @@
 }
 
 
-.menu__enter__block__btn__price {
+.menu__enter__block__btn__price, .menu__dishes__block__btn__price, .menu__dessert__block__btn__price {
     width: 25px;
     font-weight: bold;
     text-align: center;
-    padding: 1.4em 1.5em 0 1em;
+    padding-right:15px;
 }
-.menu__enter__block__btn__order {
+.menu__enter__block__btn__order, .menu__dishes__block__btn__order, .menu__dessert__block__btn__order {
     background-color: #99E2D0;
     width: 80px;
     height: 75px;
@@ -206,26 +220,41 @@
     align-items: center;
     margin-right: -5em;
     transition-duration: .5s;
+    margin-left:10px;
 }
-.menu__enter__block__btn:hover > .menu__enter__block__btn__order {
+.menu__enter__block__btn:hover > .menu__enter__block__btn__order, .menu__dishes__block__btn:hover > .menu__dishes__block__btn__order, .menu__dessert__block__btn:hover > .menu__dessert__block__btn__order  {
     margin-right: 0;
 }
-.menu__enter__block__btn:hover > .menuenter__block__btn__order > .menu__enter__block__btn__order__container {
+.menu__enter__block__btn:hover > .menu__enter__block__btn__order > .menu__enter__block__btn__order__container, .menu__dishes__block__btn:hover > .menu__dishes__block__btn__order > .menu__dishes__block__btn__order__container, .menu__dessert__block__btn:hover > .menu__dessert__block__btn__order > .menu__dessert__block__btn__order__container {
     transform: rotate(360deg);
 }
-.menu__enter__block__btn__order__container {
+.menu__enter__block__btn__order__container, .menu__dishes__block__btn__order__container,.menu__dessert__block__btn__order__container {
     display: flex;
     justify-content: center;
     border-radius: 100px;
     width: 35px;
-    transform: rotate(0deg);
+    transform: rotate(360deg);
     transition-duration: .65s;
 }
-
-.menu__enter__block__btn__order__container__icon{
-    >i{
-        width: 1.2em;
-        transform: rotate(360deg);
-        color:white;
-    }
+.menu__dishes__block__btn__container__icon > i, .menu__enter__block__btn__container__icon > i, .menu__dessert__block__btn__container__icon > i  {
+    color: white;
+    
 }
+//btn__commander//
+.commander{
+    display:flex;
+    justify-content: center;
+}
+.btn__commander{
+    
+    font-size: 17px;
+    color: white;
+    border-radius: 1.5rem;
+    cursor:pointer;
+    padding: 0.75rem 1rem;
+    background-image: $black-img-degrad;
+    margin: 32px 0 72px 0;
+    box-shadow: 5px 5px 10px 2px $dark-gps-color;
+}
+    
+
