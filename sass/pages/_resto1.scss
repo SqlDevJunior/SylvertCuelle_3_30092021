@@ -23,7 +23,7 @@
     width: 100%;
     object-fit: cover;
     box-shadow:-32px -38px 2px 25px rgba(0,0,0,0) ;
-    }
+}
 
  //*conteneur choix menu*//
  .container__resto{
@@ -38,28 +38,27 @@
     
     @include bp(desktop){
         width:60%;
-
+        .title__resto1{
+            width:60%;
+        }
     }
     
     @include bp(tablet){
-        width: 70%;
+        width: 50%;
+        .title__resto1{
+            width: 50%;
+        }
     }
-   
-}
-
-    
-   
-
     .title__resto1{
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #eaeaea;
-  
+    font-family: 'Shrikhand', cursive;
+    border-radius: 40px 40px 0 0;
     
+
     }
 
      > .title__resto1 > h2{
@@ -99,7 +98,7 @@
      width:8%;
      margin:.8rem;
  }
- .container__enter-1, .container__enter-2, .container__enter-3{
+ /*.container__enter-1, .container__enter-2, .container__enter-3{
      display:flex;
      justify-content: center;
      flex-direction: column;
@@ -108,7 +107,7 @@
      border-radius: 15px;
      padding:.5rem;
      box-shadow:1px 2px 28px 0px rgba(0,0,0,0.25);
- }
+ }*/
  .title__enter > h3{
      font-weight:normal;
  }
@@ -141,25 +140,25 @@
  }
  
 
-
+ }
 //menu a la française//
 
-.menu__enter__block > .btn--1, .menu__enter__block > .btn--2, .menu__enter__block > .btn--3  {
+.enter__container > .btn--1, .enter__container > .btn--2, .enter__container > .btn--3  {
     animation: loadingbtnstep 0.8s 0.2s backwards ease;
 }
-.menu__dishes__block > .btn--1, .menu__dishes__block > .btn--2, .menu__dishes__block > .btn--3{
+.dishes__container > .btn--1, .dishes__container > .btn--2, .dishes__container > .btn--3{
     animation: loadingbtnstep 0.8s 0.2s backwards ease;
 }
-.menu__dessert__block > .btn--1, .menu__dessert__block > .btn--2, .menu__dessert__block > .btn--3{
+.dessert__container > .btn--1, .dessert__container > .btn--2, .dessert__container > .btn--3{
     animation: loadingbtnstep 0.8s 0.2s backwards ease;
 }
-.menu__enter__block__btn, .menu__dishes__block__btn, .menu__dessert__block__btn   {
+.enter__container__btn, .dishes__container__btn, .dessert__container__btn   {
     box-shadow: none;
 }
-.menu__enter__block__btn:hover, .menu__dishes__block__btn:hover, .menu__dessert__block__btn:hover {
+.enter__container__btn:hover, .dishes__container__btn:hover, .dessert__container__btn:hover {
     box-shadow: 0.25rem 0.25rem 15px #7b7171;
 }
-.menu__enter__block__btn, .menu__dishes__block__btn, .menu__dessert__block__btn {
+.enter__container__btn, .dishes__container__btn, .dessert__container__btn {
     background-color: white;
     width: 90%;
     height: 75px;
@@ -182,20 +181,20 @@
         transform: translateY(0px);
     }
 }
-.menu__enter__block__btn__name, .menu__dishes__block__btn__name, .menu__dessert__block__btn__name {
+.enter__container__text, .dishes__container__text, .dessert__container__text {
     width: 85%;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
 }
-.menu__enter__block__btn__name__title, .menu__dishes__block__btn__name__title, .menu__dessert__block__btn__name__title {
+.enter__container__text__title, .dishes__container__text__title, .dessert__container__text__title {
     font-size: 1em;
     margin: 2% 0 0 0;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
 }
-.menu__enter__block__btn__name__details, .menu__dishes__block__btn__name__details, .menu__dessert__block__btn__name__details {
+.enter__container__text__legend, .dishes__container__text__legend, .dessert__container__text__legend {
     margin: 1% 0 2% 0;
     opacity: 0.5;
     text-overflow: ellipsis;
@@ -204,13 +203,13 @@
 }
 
 
-.menu__enter__block__btn__price, .menu__dishes__block__btn__price, .menu__dessert__block__btn__price {
+.enter__price, .dishes__price, .dessert__price {
     width: 25px;
     font-weight: bold;
     text-align: center;
     padding-right:15px;
 }
-.menu__enter__block__btn__order, .menu__dishes__block__btn__order, .menu__dessert__block__btn__order {
+.enter__order, .dishes__order, .dessert__order {
     background-color: #99E2D0;
     width: 80px;
     height: 75px;
@@ -222,13 +221,13 @@
     transition-duration: .5s;
     margin-left:10px;
 }
-.menu__enter__block__btn:hover > .menu__enter__block__btn__order, .menu__dishes__block__btn:hover > .menu__dishes__block__btn__order, .menu__dessert__block__btn:hover > .menu__dessert__block__btn__order  {
+.enter__container__btn:hover > .enter__order, .dishes__container__btn:hover > .dishes__order, .dessert__container__btn:hover > .dessert__order  {
     margin-right: 0;
 }
-.menu__enter__block__btn:hover > .menu__enter__block__btn__order > .menu__enter__block__btn__order__container, .menu__dishes__block__btn:hover > .menu__dishes__block__btn__order > .menu__dishes__block__btn__order__container, .menu__dessert__block__btn:hover > .menu__dessert__block__btn__order > .menu__dessert__block__btn__order__container {
+.enter__container__btn:hover > .enter__order > .enter__order__container, .dishes__container__btn:hover > .dishes__order > .dishes__order__container, .dessert__container__btn:hover > .dessert__order > .dessert__order__container {
     transform: rotate(360deg);
 }
-.menu__enter__block__btn__order__container, .menu__dishes__block__btn__order__container,.menu__dessert__block__btn__order__container {
+.enter__order__container, .dishes__order__container,.dessert__order__container {
     display: flex;
     justify-content: center;
     border-radius: 100px;
@@ -236,7 +235,7 @@
     transform: rotate(360deg);
     transition-duration: .65s;
 }
-.menu__dishes__block__btn__container__icon > i, .menu__enter__block__btn__container__icon > i, .menu__dessert__block__btn__container__icon > i  {
+.dishes__container__icon > i, .enter__container__icon > i, .dessert__container__icon > i  {
     color: white;
     
 }

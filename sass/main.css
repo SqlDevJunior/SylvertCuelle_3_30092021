@@ -137,21 +137,37 @@ footer .proposition__restaurant a, footer .partenaire a, footer .mention__text a
           flex-direction: column;
   background: #ebebeb;
   border-radius: 40px 40px 0 0;
+  /*.container__enter-1, .container__enter-2, .container__enter-3{
+     display:flex;
+     justify-content: center;
+     flex-direction: column;
+     background-color: white;
+     margin:.5rem;
+     border-radius: 15px;
+     padding:.5rem;
+     box-shadow:1px 2px 28px 0px rgba(0,0,0,0.25);
+ }*/
 }
 
 @media screen and (min-width: 1200px) {
   .container__resto {
     width: 60%;
   }
+  .container__resto .title__resto1 {
+    width: 60%;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .container__resto {
-    width: 70%;
+    width: 50%;
+  }
+  .container__resto .title__resto1 {
+    width: 50%;
   }
 }
 
-.title__resto1 {
+.container__resto .title__resto1 {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -163,9 +179,11 @@ footer .proposition__restaurant a, footer .partenaire a, footer .mention__text a
       -ms-flex-align: center;
           align-items: center;
   background-color: #eaeaea;
+  font-family: 'Shrikhand', cursive;
+  border-radius: 40px 40px 0 0;
 }
 
-> .title__resto1 > h2 {
+.container__resto > .title__resto1 > h2 {
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -183,7 +201,7 @@ footer .proposition__restaurant a, footer .partenaire a, footer .mention__text a
           justify-content: center;
 }
 
-.heart__resto1 {
+.container__resto .heart__resto1 {
   padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -205,7 +223,7 @@ footer .proposition__restaurant a, footer .partenaire a, footer .mention__text a
   padding-right: 20px;
 }
 
-.heart__resto1 :hover {
+.container__resto .heart__resto1 :hover {
   -webkit-transition: 1.1s 0s linear;
   transition: 1.1s 0s linear;
   display: inline-block;
@@ -218,37 +236,18 @@ footer .proposition__restaurant a, footer .partenaire a, footer .mention__text a
   z-index: 1;
 }
 
-.container__title > h2 {
+.container__resto .container__title > h2 {
   font-weight: lighter;
   border-bottom: 4px solid #99e2d0;
   width: 8%;
   margin: .8rem;
 }
 
-.container__enter-1, .container__enter-2, .container__enter-3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: white;
-  margin: .5rem;
-  border-radius: 15px;
-  padding: .5rem;
-  -webkit-box-shadow: 1px 2px 28px 0px rgba(0, 0, 0, 0.25);
-          box-shadow: 1px 2px 28px 0px rgba(0, 0, 0, 0.25);
-}
-
-.title__enter > h3 {
+.container__resto .title__enter > h3 {
   font-weight: normal;
 }
 
-.legend__enter {
+.container__resto .legend__enter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -257,7 +256,7 @@ footer .proposition__restaurant a, footer .partenaire a, footer .mention__text a
           justify-content: space-between;
 }
 
-.legend__enter > h4 {
+.container__resto .legend__enter > h4 {
   font-weight: lighter;
 }
 
@@ -279,47 +278,47 @@ footer .proposition__restaurant a, footer .partenaire a, footer .mention__text a
   }
 }
 
-.container__enter {
+.container__resto .container__enter {
   -webkit-animation: fadein 3s ease-in-out;
           animation: fadein 3s ease-in-out;
 }
 
-.container__dishes {
+.container__resto .container__dishes {
   -webkit-animation: fadein 6s ease-in-out;
           animation: fadein 6s ease-in-out;
 }
 
-.container__dessert {
+.container__resto .container__dessert {
   -webkit-animation: fadein 9s ease-in-out;
           animation: fadein 9s ease-in-out;
 }
 
-.menu__enter__block > .btn--1, .menu__enter__block > .btn--2, .menu__enter__block > .btn--3 {
+.enter__container > .btn--1, .enter__container > .btn--2, .enter__container > .btn--3 {
   -webkit-animation: loadingbtnstep 0.8s 0.2s backwards ease;
           animation: loadingbtnstep 0.8s 0.2s backwards ease;
 }
 
-.menu__dishes__block > .btn--1, .menu__dishes__block > .btn--2, .menu__dishes__block > .btn--3 {
+.dishes__container > .btn--1, .dishes__container > .btn--2, .dishes__container > .btn--3 {
   -webkit-animation: loadingbtnstep 0.8s 0.2s backwards ease;
           animation: loadingbtnstep 0.8s 0.2s backwards ease;
 }
 
-.menu__dessert__block > .btn--1, .menu__dessert__block > .btn--2, .menu__dessert__block > .btn--3 {
+.dessert__container > .btn--1, .dessert__container > .btn--2, .dessert__container > .btn--3 {
   -webkit-animation: loadingbtnstep 0.8s 0.2s backwards ease;
           animation: loadingbtnstep 0.8s 0.2s backwards ease;
 }
 
-.menu__enter__block__btn, .menu__dishes__block__btn, .menu__dessert__block__btn {
+.enter__container__btn, .dishes__container__btn, .dessert__container__btn {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.menu__enter__block__btn:hover, .menu__dishes__block__btn:hover, .menu__dessert__block__btn:hover {
+.enter__container__btn:hover, .dishes__container__btn:hover, .dessert__container__btn:hover {
   -webkit-box-shadow: 0.25rem 0.25rem 15px #7b7171;
           box-shadow: 0.25rem 0.25rem 15px #7b7171;
 }
 
-.menu__enter__block__btn, .menu__dishes__block__btn, .menu__dessert__block__btn {
+.enter__container__btn, .dishes__container__btn, .dessert__container__btn {
   background-color: white;
   width: 90%;
   height: 75px;
@@ -366,14 +365,14 @@ footer .proposition__restaurant a, footer .partenaire a, footer .mention__text a
   }
 }
 
-.menu__enter__block__btn__name, .menu__dishes__block__btn__name, .menu__dessert__block__btn__name {
+.enter__container__text, .dishes__container__text, .dessert__container__text {
   width: 85%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 
-.menu__enter__block__btn__name__title, .menu__dishes__block__btn__name__title, .menu__dessert__block__btn__name__title {
+.enter__container__text__title, .dishes__container__text__title, .dessert__container__text__title {
   font-size: 1em;
   margin: 2% 0 0 0;
   text-overflow: ellipsis;
@@ -381,7 +380,7 @@ footer .proposition__restaurant a, footer .partenaire a, footer .mention__text a
   overflow: hidden;
 }
 
-.menu__enter__block__btn__name__details, .menu__dishes__block__btn__name__details, .menu__dessert__block__btn__name__details {
+.enter__container__text__legend, .dishes__container__text__legend, .dessert__container__text__legend {
   margin: 1% 0 2% 0;
   opacity: 0.5;
   text-overflow: ellipsis;
@@ -389,14 +388,14 @@ footer .proposition__restaurant a, footer .partenaire a, footer .mention__text a
   overflow: hidden;
 }
 
-.menu__enter__block__btn__price, .menu__dishes__block__btn__price, .menu__dessert__block__btn__price {
+.enter__price, .dishes__price, .dessert__price {
   width: 25px;
   font-weight: bold;
   text-align: center;
   padding-right: 15px;
 }
 
-.menu__enter__block__btn__order, .menu__dishes__block__btn__order, .menu__dessert__block__btn__order {
+.enter__order, .dishes__order, .dessert__order {
   background-color: #99E2D0;
   width: 80px;
   height: 75px;
@@ -416,16 +415,16 @@ footer .proposition__restaurant a, footer .partenaire a, footer .mention__text a
   margin-left: 10px;
 }
 
-.menu__enter__block__btn:hover > .menu__enter__block__btn__order, .menu__dishes__block__btn:hover > .menu__dishes__block__btn__order, .menu__dessert__block__btn:hover > .menu__dessert__block__btn__order {
+.enter__container__btn:hover > .enter__order, .dishes__container__btn:hover > .dishes__order, .dessert__container__btn:hover > .dessert__order {
   margin-right: 0;
 }
 
-.menu__enter__block__btn:hover > .menu__enter__block__btn__order > .menu__enter__block__btn__order__container, .menu__dishes__block__btn:hover > .menu__dishes__block__btn__order > .menu__dishes__block__btn__order__container, .menu__dessert__block__btn:hover > .menu__dessert__block__btn__order > .menu__dessert__block__btn__order__container {
+.enter__container__btn:hover > .enter__order > .enter__order__container, .dishes__container__btn:hover > .dishes__order > .dishes__order__container, .dessert__container__btn:hover > .dessert__order > .dessert__order__container {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
 
-.menu__enter__block__btn__order__container, .menu__dishes__block__btn__order__container, .menu__dessert__block__btn__order__container {
+.enter__order__container, .dishes__order__container, .dessert__order__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -440,7 +439,7 @@ footer .proposition__restaurant a, footer .partenaire a, footer .mention__text a
           transition-duration: .65s;
 }
 
-.menu__dishes__block__btn__container__icon > i, .menu__enter__block__btn__container__icon > i, .menu__dessert__block__btn__container__icon > i {
+.dishes__container__icon > i, .enter__container__icon > i, .dessert__container__icon > i {
   color: white;
 }
 
